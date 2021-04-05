@@ -1,0 +1,41 @@
+.input-text {
+  width: 320px;
+}
+
+.input-text__description {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-text__name {
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: $dark-100;
+  margin-bottom: 5px;
+}
+
+.input-text__text {
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: $dark-50;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.input-text__default {
+  box-sizing: border-box;
+  width: 320px;
+  height: 44px;
+  text-indent: 10px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+}
+
+//chrome, safari
+.input-text__default::-webkit-input-text-placeholder {
+  color: $dark-25;
+  font-size: 14px;
+  line-height: 18px;
+}
