@@ -1,0 +1,8 @@
+.input-text__focus::-webkit-input-text-placeholder {
+  color: $dark-75;
+  line-height: 24px;
+}
+
+.input-text__focus {
+  border: 1px solid $dark-50;
+}
