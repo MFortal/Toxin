@@ -1,21 +1,22 @@
-.input-text {
+.input {
   width: 320px;
 }
 
-.input-text__description {
+.input__description {
   display: flex;
   justify-content: space-between;
 }
 
-.input-text__name {
+.input__name {
   font-size: 12px;
   line-height: 15px;
   text-transform: uppercase;
   color: $dark-100;
   margin-bottom: 5px;
+  font-weight: bold;
 }
 
-.input-text__text {
+.input__text {
   font-size: 12px;
   line-height: 15px;
   text-transform: uppercase;
@@ -24,7 +25,7 @@
   font-weight: 700;
 }
 
-.input-text__default {
+.input__default {
   box-sizing: border-box;
   width: 320px;
   height: 44px;
@@ -34,7 +35,7 @@
 }
 
 //chrome, safari
-.input-text__default::-webkit-input-text-placeholder {
+.input__default::-webkit-input-placeholder {
   color: $dark-25;
   font-size: 14px;
   line-height: 18px;

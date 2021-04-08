@@ -1,6 +1,7 @@
+@import "content/mixins/mixin";
 @import "header/header";
-@import "content/input-text/input-text";
-@import "content/_input-hover/_input-hover";
+@import "content/input/input";
+@import "content/_input-focus/_input-focus";
 
 .section {
   margin: 0 140px;
