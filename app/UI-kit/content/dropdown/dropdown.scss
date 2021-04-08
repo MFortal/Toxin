@@ -1,0 +1,29 @@
+.dropdown {
+  @include widthInput($widthMax);
+}
+
+.dropdown__description {
+  @include description;
+}
+
+.dropdown__name {
+  @include name($dark-100);
+}
+
+.select__default {
+  @include default($dark-25);
+  font-size: 14px;
+  line-height: 24px;
+  color: $dark-75;
+  background-image: url("arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 13px center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+}
+
+//chrome, safari
+.select__default::-webkit-input-placeholder {
+  @include inputPlaceholder($dark-25);
+}
