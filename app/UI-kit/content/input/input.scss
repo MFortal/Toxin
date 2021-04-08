@@ -1,42 +1,24 @@
 .input {
-  width: 320px;
+  @include widthInput($widthMax);
 }
 
 .input__description {
-  display: flex;
-  justify-content: space-between;
+  @include description;
 }
 
 .input__name {
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-  color: $dark-100;
-  margin-bottom: 5px;
-  font-weight: bold;
+  @include name($dark-100);
 }
 
 .input__text {
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-  color: $dark-50;
-  margin-bottom: 5px;
-  font-weight: 700;
+  @include text($dark-50);
 }
 
 .input__default {
-  box-sizing: border-box;
-  width: 320px;
-  height: 44px;
-  text-indent: 10px;
-  border: 1px solid $dark-25;
-  border-radius: 4px;
+  @include default($dark-25);
 }
 
 //chrome, safari
 .input__default::-webkit-input-placeholder {
-  color: $dark-25;
-  font-size: 14px;
-  line-height: 18px;
+  @include inputPlaceholder($dark-25);
 }
