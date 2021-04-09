@@ -7,3 +7,15 @@
 .section {
   margin: 0 140px;
 }
+
+.kit-mb-7 {
+  @include marginBottomX(7px);
+}
+
+.kit-mb-8 {
+  @include marginBottomX(8px);
+}
+
+.kit-mb-11 {
+  @include marginBottomX(11px);
+}

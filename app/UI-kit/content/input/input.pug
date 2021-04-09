@@ -1,7 +1,7 @@
-.input
+div(class = 'input '+ classSection)
   .input__description
     p.input__name #{nameField} 
-    p.input__text #{defText}
+    p(class = 'input__text ' + classText) #{defText}
   input(
     type = inputType
     placeholder = placeholderText

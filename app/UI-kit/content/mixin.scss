@@ -13,12 +13,13 @@
   text-transform: uppercase;
   color: $color;
   margin-bottom: 5px;
+  margin-left: 3px;
   font-weight: bold;
 }
 
 @mixin text($color) {
   font-size: 12px;
-  line-height: 15px;
+  line-height: 10px;
   text-transform: uppercase;
   color: $color;
   margin-bottom: 5px;
@@ -38,4 +39,8 @@
   color: $color;
   font-size: 14px;
   line-height: 18px;
+}
+
+@mixin marginBottomX($x) {
+  margin-bottom: $x;
 }
