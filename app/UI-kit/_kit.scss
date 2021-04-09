@@ -8,14 +8,15 @@
   margin: 0 140px;
 }
 
-.kit-mb-7 {
+.input-default-kit,
+.input-masked-kit {
   @include marginBottomX(7px);
 }
 
-.kit-mb-8 {
+.input-focus-kit {
   @include marginBottomX(8px);
 }
 
-.kit-mb-11 {
+.dropdownGuests-kit {
   @include marginBottomX(11px);
 }
