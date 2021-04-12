@@ -1,0 +1,7 @@
+.divDropdown-widthAve {
+  @include widthInput($widthAve);
+}
+
+.dropdown-filter::-webkit-input-placeholder {
+  @include inputPlaceholder($dark-75);
+}
