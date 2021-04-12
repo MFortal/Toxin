@@ -15,7 +15,7 @@
 }
 
 .input__default {
-  @include default($dark-25);
+  @include default($dark-25, $widthMax);
 }
 
 //chrome, safari

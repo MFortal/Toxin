@@ -6,7 +6,7 @@
 @import "content/_dropdownDate/_dropdownDate";
 @import "content/_dropdownDate2/_dropdownDate2";
 
-.section {
+.main {
   margin: 0 140px;
 }
 
@@ -21,4 +21,12 @@
 
 .dropdownGuests-kit {
   @include marginBottomX(11px);
+}
+
+.column {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 320px;
+  justify-content: space-between;
 }

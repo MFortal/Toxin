@@ -26,9 +26,9 @@
   font-weight: 700;
 }
 
-@mixin default($color) {
+@mixin default($color, $width) {
   box-sizing: border-box;
-  width: 320px;
+  width: $width;
   height: 44px;
   text-indent: 10px;
   border: 1px solid $color;

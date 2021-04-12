@@ -1,7 +1,11 @@
-.dropdownDate {
+.divDropdown-widthMin {
   @include widthInput($widthMin);
 }
 
 .dropdownDate::-webkit-input-placeholder {
   @include inputPlaceholder($dark-75);
+}
+
+.dropdownDate {
+  @include default($dark-25, $widthMin);
 }

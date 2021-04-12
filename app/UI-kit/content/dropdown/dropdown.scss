@@ -11,7 +11,7 @@
 }
 
 .select__default {
-  @include default($dark-25);
+  @include default($dark-25, $widthMax);
   font-size: 14px;
   line-height: 24px;
   color: $dark-75;
