@@ -16,6 +16,7 @@
 
 .input__default {
   @include default($dark-25, $widthMax);
+  text-indent: 12px;
 }
 
 //chrome, safari

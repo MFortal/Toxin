@@ -11,8 +11,15 @@
   margin: 0 140px;
 }
 
-.input-default-kit,
-.input-masked-kit {
+.column {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 320px;
+  justify-content: space-between;
+}
+
+.input-default-kit {
   @include marginBottomX(7px);
 }
 
@@ -24,10 +31,10 @@
   @include marginBottomX(11px);
 }
 
-.column {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 320px;
-  justify-content: space-between;
+.input-masked-kit {
+  @include marginBottomX(29px);
+}
+
+.dropdownDate2-kit {
+  @include marginBottomX(28px);
 }
