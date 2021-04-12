@@ -1,5 +1,4 @@
 const path = require('path')
-
 const glob = require('glob')
 const webpack = require('webpack')
 const merge = require('webpack-merge')
@@ -192,6 +191,7 @@ module.exports = env => {
     env === 'production' ? productionConfig : developmentConfig
   )
 }
+
 
 function getPaths({
   sourceDir = 'app',
