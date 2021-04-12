@@ -6,6 +6,7 @@
 @import "content/_dropdownDate/_dropdownDate";
 @import "content/_dropdownDate2/_dropdownDate2";
 @import "content/_dropdownFilterDate/dropdownFilterDate";
+@import "content/_input-subscription/input-subscription";
 
 .main {
   margin: 0 140px;
@@ -37,4 +38,8 @@
 
 .dropdownDate2-kit {
   @include marginBottomX(28px);
+}
+
+.dropdownFilterDate-kit {
+  @include marginBottomX(29px);
 }
