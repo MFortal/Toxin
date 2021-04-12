@@ -29,10 +29,7 @@
   @include inputPlaceholder($dark-25);
 }
 
-.input__text {
+.dropdown__text {
   @include text($dark-50);
-}
-
-.input__description {
-  @include description;
+  line-height: 15px;
 }

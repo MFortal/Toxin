@@ -1,0 +1,10 @@
+.divDropdown-widthAve {
+  @include widthInput($widthAve);
+}
+.dropdown-default {
+  @include default($dark-25, $widthAve);
+}
+
+.dropdown-default::-webkit-input-placeholder {
+  @include inputPlaceholder($dark-75);
+}
