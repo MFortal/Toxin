@@ -28,3 +28,11 @@
 .select__default::-webkit-input-placeholder {
   @include inputPlaceholder($dark-25);
 }
+
+.input__text {
+  @include text($dark-50);
+}
+
+.input__description {
+  @include description;
+}

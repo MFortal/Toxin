@@ -8,5 +8,6 @@
 }
 
 .input__text-focus {
-  line-height: 15px;
+  line-height: 15px !important;
+  margin-right: -2px;
 }
