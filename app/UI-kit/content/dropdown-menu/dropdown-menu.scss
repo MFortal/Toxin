@@ -1,0 +1,127 @@
+.dropdown-menu {
+  @include widthInput($widthAve);
+}
+
+.dropdown-menu__description {
+  @include description;
+}
+
+.dropdown-menu__name {
+  @include name($dark-100);
+}
+
+.dropdown-menu__selectedItem {
+  box-sizing: border-box;
+  width: $widthAve;
+  font-size: 14px;
+  line-height: 24px;
+  color: $dark-75;
+  text-indent: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dropdown-menu__text {
+  @include text($dark-50);
+  line-height: 15px;
+}
+
+.dropdown-menu__selectedItem_text {
+  width: 177px;
+  margin-top: 8px;
+  vertical-align: middle;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.dropdown-menu__buttonMinus,
+.dropdown-menu__buttonPlus {
+  width: 30px;
+  height: 30px;
+  border: 1px solid $dark-25;
+  box-sizing: border-box;
+  border-radius: 22px;
+  font-size: 18px;
+  line-height: 22px;
+  color: $dark-50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.dropdown-menu__listItemText,
+.dropdown-menu__count {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: $dark-100;
+}
+
+.dropdown-menu__count {
+  width: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.dropdown-menu__listItemText {
+  margin-left: 15px;
+}
+
+.dropdown-menu__selectedItem_arrow {
+  color: $dark-75;
+  background-image: url("arrow.svg");
+  width: 44px;
+  height: 41px;
+  background-repeat: no-repeat;
+  background-position: right 16.55px center;
+}
+
+.dropdown-menu__counter {
+  margin-right: 7px;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-menu__listItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.dropdown-menu__select {
+  border: 1px solid $dark-50;
+  border-radius: 4px;
+  position: relative;
+}
+
+.dropdown-menu__list {
+  border-top: 1px solid $dark-50;
+  display: none;
+  position: absolute;
+  z-index: 1;
+  overflow: auto;
+}
+
+.dropdown-menu__list:last-child {
+  margin-bottom: 9px;
+}
+
+.dropdown-menu__selectedItem {
+  cursor: pointer;
+}
+
+.show {
+  display: contents;
+}
+
+.opacity_minus {
+  opacity: 0.38;
+}

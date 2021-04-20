@@ -8,6 +8,7 @@
 @import "content/_dropdownFilterDate/dropdownFilterDate";
 @import "content/_input-subscription/input-subscription";
 @import "content/_dropdown-default/dropdown-default";
+@import "content/dropdown-menu/dropdown-menu";
 
 .main {
   margin: 0 140px;
@@ -23,6 +24,10 @@
 
 .input-default-kit {
   @include marginBottomX(7px);
+}
+
+.dropdownDefault-kit {
+  @include marginBottomX(8px);
 }
 
 .input-focus-kit {

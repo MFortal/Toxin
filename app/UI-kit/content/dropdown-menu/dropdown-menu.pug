@@ -1,0 +1,24 @@
+- var nameField = 'dropdown'
+- var textSelected = '2 спальни, 2 кровати, 1 ванная комната'
+- var textField = 'expanded'
+- var options = ['спальни', 'кровати', 'ванные комнаты'] 
+- var classDivDropdown = ''
+
+div(class='dropdown-menu ' + classDivDropdown)
+  .dropdown-menu__description
+    p.dropdown-menu__name #{nameField}
+    p.dropdown-menu__text #{textField}
+  .dropdown-menu__select
+    .dropdown-menu__selectedItem 
+      .dropdown-menu__selectedItem_text #{textSelected}
+      .dropdown-menu__selectedItem_arrow
+    .dropdown-menu__list
+      each opt in options
+        .dropdown-menu__listItem 
+          .dropdown-menu__listItemText #{opt}
+          .dropdown-menu__counter
+            div(class="dropdown-menu__buttonMinus dropdown-menu__counter-btn opacity_minus" 
+            data-direction="minus") -
+            .dropdown-menu__count 0
+            div(class="dropdown-menu__buttonPlus dropdown-menu__counter-btn" 
+            data-direction="plus") +
