@@ -56,5 +56,9 @@
 }
 
 .dropdownMenu-kit {
-  @include marginBottomX(222px);
+  @include marginBottomX(160px);
+}
+
+.checkboxList-kit {
+  @include marginBottomX(20px);
 }

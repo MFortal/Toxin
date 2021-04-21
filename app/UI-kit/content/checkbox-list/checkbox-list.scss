@@ -4,6 +4,7 @@
 
 .checkbox-list__listItem {
   display: flex;
+  background-color: $white;
 }
 
 .checkbox-list__description {
@@ -18,7 +19,7 @@
 
 .checkbox-list__text {
   @include name($dark-100);
-  margin-bottom: 0;
+  margin-bottom: 3px;
 }
 
 .checkbox-list__arrow {
@@ -36,6 +37,7 @@
   font-size: 14px;
   line-height: 18px;
   color: $dark-50;
+  text-transform: capitalize;
 }
 
 .checkbox-list__itemCheck {

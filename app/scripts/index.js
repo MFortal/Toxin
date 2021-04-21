@@ -42,16 +42,19 @@ const counter = function () {
 counter()
 
 // checkbox-list
-let checkboxListDescription = document.querySelector('.checkbox-list__description')
-let checkboxList = document.querySelector('.checkbox-list__list')
-let checkboxArrow = document.querySelector('.checkbox-list__arrow')
+let checkboxLists = document.querySelectorAll('.checkbox-list__description')
 
 function addShowCheck () {
+  // добавить checkbox-list__list и checkbox-list__arrow
+  let checkboxArrow = this.querySelector('.checkbox-list__arrow')
+  console.log(checkboxArrow)
+  let checkboxList = this.nextElementSibling
+  console.log(checkboxList)
   checkboxList.classList.toggle('list_show')
   checkboxArrow.classList.toggle('arrow_rotate')
 };
 
-checkboxListDescription.addEventListener('click', addShowCheck)
+checkboxLists.forEach(list => list.addEventListener('click', addShowCheck))
 
 // checkbox-list items
 const toggleMark = function () {
