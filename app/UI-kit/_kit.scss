@@ -10,6 +10,9 @@
 @import "content/_dropdown-default/_dropdown-default";
 @import "content/dropdown-menu/dropdown-menu";
 @import "content/checkbox-list/checkbox-list";
+@import "content/card-benefit/card-benefit";
+@import "content/_card-benefit-comfort/card-benefit-comfort";
+@import "content/_card-benefit-convenience/card-benefit-convenience";
 
 .main {
   margin: 0 140px;
@@ -61,4 +64,8 @@
 
 .checkboxList-kit {
   @include marginBottomX(20px);
+}
+
+.checkboxList2-kit {
+  @include marginBottomX(254px);
 }
