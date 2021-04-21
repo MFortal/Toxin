@@ -1,5 +1,6 @@
 .dropdown-menu {
   @include widthInput($widthAve);
+  height: 75px;
 }
 
 .dropdown-menu__description {
@@ -74,12 +75,7 @@
 }
 
 .dropdown-menu__selectedItem_arrow {
-  color: $dark-75;
-  background-image: url("arrow.svg");
-  width: 44px;
-  height: 41px;
-  background-repeat: no-repeat;
-  background-position: right 16.55px center;
+  @include arrow($dark-75);
 }
 
 .dropdown-menu__counter {
@@ -105,7 +101,7 @@
 .dropdown-menu__list {
   border-top: 1px solid $dark-50;
   display: none;
-  position: absolute;
+  // position: absolute;
   z-index: 1;
   overflow: auto;
 }
