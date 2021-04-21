@@ -40,3 +40,29 @@ const counter = function () {
   })
 }
 counter()
+
+// checkbox-list
+let checkboxListDescription = document.querySelector('.checkbox-list__description')
+let checkboxList = document.querySelector('.checkbox-list__list')
+let checkboxArrow = document.querySelector('.checkbox-list__arrow')
+
+function addShowCheck () {
+  checkboxList.classList.toggle('list_show')
+  checkboxArrow.classList.toggle('arrow_rotate')
+};
+
+checkboxListDescription.addEventListener('click', addShowCheck)
+
+// checkbox-list items
+const toggleMark = function () {
+  const checkboxes = document.querySelectorAll('.checkbox-list__itemCheck')
+  checkboxes.forEach(box => {
+    box.addEventListener('click', function () {
+      const inp = this.parentElement.querySelector('.checkbox-list__mark')
+      if (box.checked) {
+        inp.classList.add('checkbox-list__mark_checked')
+      } else inp.classList.remove('checkbox-list__mark_checked')
+    })
+  })
+}
+toggleMark()

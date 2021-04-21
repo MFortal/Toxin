@@ -5,10 +5,11 @@
 @import "content/dropdown/dropdown";
 @import "content/_dropdownDate/_dropdownDate";
 @import "content/_dropdownDate2/_dropdownDate2";
-@import "content/_dropdownFilterDate/dropdownFilterDate";
-@import "content/_input-subscription/input-subscription";
-@import "content/_dropdown-default/dropdown-default";
+@import "content/_dropdownFilterDate/_dropdownFilterDate";
+@import "content/_input-subscription/_input-subscription";
+@import "content/_dropdown-default/_dropdown-default";
 @import "content/dropdown-menu/dropdown-menu";
+@import "content/checkbox-list/checkbox-list";
 
 .main {
   margin: 0 140px;
@@ -52,4 +53,8 @@
 
 .inputSubscription-kit {
   @include marginBottomX(88px);
+}
+
+.dropdownMenu-kit {
+  @include marginBottomX(222px);
 }

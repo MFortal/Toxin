@@ -43,3 +43,12 @@
 @mixin marginBottomX($x) {
   margin-bottom: $x;
 }
+
+@mixin arrow($color) {
+  color: $color;
+  background-image: url("arrow.svg");
+  width: 44px;
+  height: 41px;
+  background-repeat: no-repeat;
+  background-position: right 16.55px center;
+}
