@@ -45,11 +45,8 @@ counter()
 let checkboxLists = document.querySelectorAll('.checkbox-list__description')
 
 function addShowCheck () {
-  // добавить checkbox-list__list и checkbox-list__arrow
   let checkboxArrow = this.querySelector('.checkbox-list__arrow')
-  console.log(checkboxArrow)
   let checkboxList = this.nextElementSibling
-  console.log(checkboxList)
   checkboxList.classList.toggle('list_show')
   checkboxArrow.classList.toggle('arrow_rotate')
 };
@@ -58,13 +55,13 @@ checkboxLists.forEach(list => list.addEventListener('click', addShowCheck))
 
 // checkbox-list items
 const toggleMark = function () {
-  const checkboxes = document.querySelectorAll('.checkbox-list__itemCheck')
+  const checkboxes = document.querySelectorAll('.checkbox-item__itemCheck')
   checkboxes.forEach(box => {
     box.addEventListener('click', function () {
-      const inp = this.parentElement.querySelector('.checkbox-list__mark')
+      const inp = this.parentElement.querySelector('.checkbox-item__mark')
       if (box.checked) {
-        inp.classList.add('checkbox-list__mark_checked')
-      } else inp.classList.remove('checkbox-list__mark_checked')
+        inp.classList.add('checkbox-item__mark_checked')
+      } else inp.classList.remove('checkbox-item__mark_checked')
     })
   })
 }

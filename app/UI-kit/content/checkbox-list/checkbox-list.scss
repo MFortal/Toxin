@@ -2,11 +2,6 @@
   height: 44px;
 }
 
-.checkbox-list__listItem {
-  display: flex;
-  background-color: $white;
-}
-
 .checkbox-list__description {
   width: 266px;
   height: 44px;
@@ -28,45 +23,6 @@
   background-position: right 15px bottom 19px;
 }
 
-.checkbox-list__label {
-  cursor: pointer;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: flex-end;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
-  color: $dark-50;
-}
-
-.checkbox-list__itemCheck {
-  display: none;
-}
-
-.checkbox-list__mark {
-  width: 18px;
-  height: 18px;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  border-radius: 4px;
-  border: 1px solid $dark-25;
-  background-color: $white;
-}
-
-.checkbox-list__mark_checked {
-  background: url("check-mark.svg") no-repeat;
-  background-position: center;
-  border: 1px solid $purple;
-}
-
 .checkbox-list__list {
   display: none;
-}
-
-.list_show {
-  display: contents;
-}
-
-.arrow_rotate {
-  transform: rotate(180deg);
 }

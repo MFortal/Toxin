@@ -4,7 +4,4 @@ div.checkbox-list
     .checkbox-list__arrow
   .checkbox-list__list
     each opt in options
-      .checkbox-list__listItem 
-        label.checkbox-list__label #{opt}
-          .checkbox-list__mark
-          input(type="checkbox" class="checkbox-list__itemCheck")
+      include ../checkbox-item/checkbox-item.pug
