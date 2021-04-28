@@ -58,7 +58,7 @@ const toggleMark = function () {
   const checkboxes = document.querySelectorAll('.checkbox-item__itemCheck')
   checkboxes.forEach(box => {
     box.addEventListener('click', function () {
-      const inp = this.parentElement.querySelector('.checkbox-item__mark')
+      const inp = this.previousSibling
       if (box.checked) {
         inp.classList.add('checkbox-item__mark_checked')
       } else inp.classList.remove('checkbox-item__mark_checked')
