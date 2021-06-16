@@ -17,6 +17,7 @@
 @import "content/_checkbox-buttons/checkbox-buttons";
 @import "content/radio-button/radio-button";
 @import "content/_radio-buttons/_radio-buttons";
+@import "content/_toggle/_toggle";
 
 .main {
   margin: 0 140px;
@@ -79,4 +80,8 @@
 .checkboxButtons-kit {
   margin-top: 11px;
   @include marginBottomX(42px);
+}
+
+.radioButtons-kit {
+  @include marginBottomX(31px);
 }

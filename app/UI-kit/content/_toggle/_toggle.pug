@@ -1,0 +1,11 @@
+- var heading = 'toggle';
+- var options = ['Получать спецпредложения', 'Получать спецпредложения']
+- var classButton = 'toggle-button';
+- var classDivCheckbox = 'toggle-div';
+- var classText = 'toggle-text';
+
+.toggle
+  .toggle__heading #{heading}
+  .toggle__buttons
+    each opt in options
+      include ../checkbox-item/checkbox-item
