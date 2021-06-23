@@ -18,6 +18,8 @@
 @import "content/radio-button/radio-button";
 @import "content/_radio-buttons/_radio-buttons";
 @import "content/_toggle/_toggle";
+@import "content/button/button";
+@import "content/_like-buttons/_like-buttons";
 
 .main {
   margin: 0 140px;
@@ -84,4 +86,8 @@
 
 .radioButtons-kit {
   @include marginBottomX(31px);
+}
+
+.toggle-kit {
+  @include marginBottomX(29px);
 }

@@ -66,3 +66,17 @@ const toggleMark = function () {
   })
 }
 toggleMark()
+
+// like-button__button
+const likeButton = function () {
+  const likeButtons = document.querySelectorAll('.like-button__button')
+  likeButtons.forEach(button => {
+    button.addEventListener('click', function () {
+      button.classList.toggle('like-button__button_active')
+      if (button.classList.contains('like-button__button_active'))
+        button.textContent = +button.textContent + 1
+      else button.textContent = +button.textContent - 1
+    })
+  })
+}
+likeButton()
