@@ -1,0 +1,16 @@
+.rate-button__button {
+  background-image: url("star_border.svg");
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-color: transparent;
+}
+
+.rate-button__button_active {
+  background-image: url("star.svg");
+}
+
+.rate-button__button:focus {
+  background-image: url("star.svg");
+}
