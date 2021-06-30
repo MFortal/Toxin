@@ -23,6 +23,7 @@
 @import "content/_rate-stars/_rate-stars";
 @import "content/_rate-buttons/_rate-buttons";
 @import "content/_dropdown-guests-apply/_dropdown-guests-apply";
+@import "content/_rich-checkbox-buttons/_rich-checkbox-buttons";
 
 .main {
   margin: 0 140px;
@@ -105,4 +106,8 @@
 
 .rateButtons-kit {
   @include marginBottomX(179px);
+}
+
+.richCheckboxButtons-kit {
+  margin-top: 245px;
 }
