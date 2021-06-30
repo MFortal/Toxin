@@ -34,7 +34,6 @@
   flex-direction: column;
   flex-wrap: wrap;
   width: 320px;
-  justify-content: space-between;
   margin-right: 126px;
 }
 
@@ -89,7 +88,7 @@
 
 .checkboxButtons-kit {
   margin-top: 11px;
-  @include marginBottomX(42px);
+  @include marginBottomX(41px);
 }
 
 .radioButtons-kit {
