@@ -1,5 +1,10 @@
 .checkbox-item
   label.checkbox-item__label 
-    p(class="checkbox-item__text "+ classText) #{opt}
-    div(class="checkbox-item__mark " + classDivCheckbox)
-    input(type="checkbox" class= classButton)
+    if opt.heading
+      .checkbox-item__div-text
+        p(class='checkbox-item__heading ') #{opt.heading}
+        p(class='checkbox-item__text '+ classText) #{opt.text}
+    else
+      p(class='checkbox-item__text '+ classText) #{opt}
+    div(class='checkbox-item__mark ' + classDivCheckbox)
+    input(type='checkbox' class= classButton)
