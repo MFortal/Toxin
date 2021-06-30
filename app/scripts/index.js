@@ -8,14 +8,16 @@ if (process.env.NODE_ENV !== 'production') {
 Inputmask('99.99.9999').mask(document.querySelector('.input-masked-date'))
 
 // dropdown-menu
-let dropdownSelected = document.querySelector('.dropdown-menu__selectedItem')
-let dropdownList = document.querySelector('.dropdown-menu__list')
-
-function addShow () {
-  dropdownList.classList.toggle('show')
-};
-
-dropdownSelected.addEventListener('click', addShow)
+const dropdownMenu = function () {
+  let dropdownSelected = document.querySelectorAll('.dropdown-menu__selectedItem')
+  dropdownSelected.forEach(drop => {
+    drop.addEventListener('click', function () {
+      let droplist = drop.nextSibling
+      droplist.classList.toggle('show')
+    })
+  })
+}
+dropdownMenu()
 
 // dropdown-menu counter
 const counter = function () {

@@ -1,10 +1,11 @@
+block variables
 div(class='dropdown-menu ' + classDivDropdown)
   .dropdown-menu__description
     p.dropdown-menu__name #{nameField}
     p.dropdown-menu__text #{textField}
   .dropdown-menu__select
-    .dropdown-menu__selectedItem 
-      .dropdown-menu__selectedItem_text #{textSelected}
+    div(class='dropdown-menu__selectedItem ' + classDivSelected) 
+      div(class='dropdown-menu__selectedItem_text '+ classDivSelectedText) #{textSelected}
       .dropdown-menu__selectedItem_arrow
     .dropdown-menu__list
       each opt in options
@@ -16,3 +17,4 @@ div(class='dropdown-menu ' + classDivDropdown)
             .dropdown-menu__count 0
             div(class="dropdown-menu__buttonPlus dropdown-menu__counter-btn" 
             data-direction="plus") +
+      block content

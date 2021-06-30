@@ -22,6 +22,7 @@
 @import "content/_like-buttons/_like-buttons";
 @import "content/_rate-stars/_rate-stars";
 @import "content/_rate-buttons/_rate-buttons";
+@import "content/_dropdown-guests-apply/_dropdown-guests-apply";
 
 .main {
   margin: 0 140px;
@@ -101,4 +102,8 @@
 
 .likeButtons-kit {
   @include marginBottomX(40px);
+}
+
+.rateButtons-kit {
+  @include marginBottomX(179px);
 }
