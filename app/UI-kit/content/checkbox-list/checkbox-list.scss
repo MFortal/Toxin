@@ -13,7 +13,8 @@
 }
 
 .checkbox-list__text {
-  @include h3-style() margin-bottom: 3px;
+  @include h3-style();
+  margin-bottom: 3px;
 }
 
 .checkbox-list__arrow {

@@ -19,11 +19,13 @@
 @import "content/_radio-buttons/_radio-buttons";
 @import "content/_toggle/_toggle";
 @import "content/button/button";
+@import "content/like-button/like-button";
 @import "content/_like-buttons/_like-buttons";
 @import "content/_rate-stars/_rate-stars";
 @import "content/_rate-buttons/_rate-buttons";
 @import "content/_dropdown-guests-apply/_dropdown-guests-apply";
 @import "content/_rich-checkbox-buttons/_rich-checkbox-buttons";
+@import "content/_post/_post";
 
 .main {
   margin: 0 140px;
@@ -36,6 +38,10 @@
   flex-wrap: wrap;
   width: 320px;
   margin-right: 126px;
+}
+
+.column_post {
+  width: 400px;
 }
 
 .input-default-kit {
@@ -110,4 +116,5 @@
 
 .richCheckboxButtons-kit {
   margin-top: 245px;
+  @include marginBottomX(222px);
 }

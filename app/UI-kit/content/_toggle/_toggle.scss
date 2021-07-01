@@ -1,5 +1,6 @@
 .toggle__heading {
-  @include h3-style() @include marginBottomX(15px);
+  @include h3-style();
+  @include marginBottomX(15px);
 }
 
 .toggle-div {

@@ -1,5 +1,6 @@
 .radio-buttons__heading {
-  @include h3-style() @include marginBottomX(16px);
+  @include h3-style();
+  @include marginBottomX(16px);
 }
 
 .radio-buttons__buttons {
