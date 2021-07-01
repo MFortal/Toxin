@@ -7,16 +7,6 @@
   justify-content: space-between;
 }
 
-@mixin name($color) {
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-  color: $color;
-  margin-bottom: 5px;
-  margin-left: 1px;
-  font-weight: bold;
-}
-
 @mixin text($color) {
   font-size: 12px;
   line-height: 10px;
@@ -69,13 +59,15 @@
   color: $dark-100;
 }
 
-@mixin h3-style {
+@mixin h3-style() {
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
   text-transform: uppercase;
   color: $dark-100;
+  margin-bottom: 5px;
+  margin-left: 1px;
 }
 
 @mixin body-style-text() {

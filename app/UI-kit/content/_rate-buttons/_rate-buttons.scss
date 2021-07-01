@@ -1,6 +1,5 @@
 .rate-button__heading {
-  @include name($dark-100);
-  @include marginBottomX(18px);
+  @include h3-style() @include marginBottomX(18px);
 }
 
 .rate-button__buttons {

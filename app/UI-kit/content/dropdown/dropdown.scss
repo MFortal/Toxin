@@ -7,7 +7,7 @@
 }
 
 .dropdown__name {
-  @include name($dark-100);
+  @include h3-style();
 }
 
 .select__default {

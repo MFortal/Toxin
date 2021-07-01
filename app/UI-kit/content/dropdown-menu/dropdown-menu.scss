@@ -8,7 +8,7 @@
 }
 
 .dropdown-menu__name {
-  @include name($dark-100);
+  @include h3-style();
 }
 
 .dropdown-menu__selectedItem {

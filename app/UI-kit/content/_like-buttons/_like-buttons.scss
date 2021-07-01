@@ -1,6 +1,5 @@
 .like-button__heading {
-  @include name($dark-100);
-  @include marginBottomX(15px);
+  @include h3-style() @include marginBottomX(15px);
 }
 
 .like-button__button {
