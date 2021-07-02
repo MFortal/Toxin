@@ -3,6 +3,10 @@
   height: 75px;
 }
 
+.dropdown-menu__select {
+  overflow: hidden;
+}
+
 .dropdown-menu__description {
   @include description;
 }
@@ -88,7 +92,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 7px;
+  margin-top: 5px;
   margin-bottom: 7px;
 }
 
@@ -119,4 +123,8 @@
 
 .opacity_minus {
   opacity: 0.38;
+}
+
+.dropdown-menu__selectedItem_open {
+  border-bottom: 1px solid $dark-50;
 }

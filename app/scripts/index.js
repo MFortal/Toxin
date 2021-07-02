@@ -14,6 +14,7 @@ const dropdownMenu = function () {
     drop.addEventListener('click', function () {
       let droplist = drop.nextSibling
       droplist.classList.toggle('show')
+      drop.classList.toggle('dropdown-menu__selectedItem_open')
     })
   })
 }
