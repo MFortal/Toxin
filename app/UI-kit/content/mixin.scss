@@ -61,13 +61,13 @@
   margin: 0;
 }
 
-@mixin h3-style() {
+@mixin h3-style($color) {
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
   text-transform: uppercase;
-  color: $dark-100;
+  color: $color;
   margin-bottom: 5px;
   margin-left: 1px;
 }

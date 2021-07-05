@@ -7,7 +7,7 @@
 }
 
 .input__name {
-  @include h3-style();
+  @include h3-style($dark-100);
 }
 
 .input__text {

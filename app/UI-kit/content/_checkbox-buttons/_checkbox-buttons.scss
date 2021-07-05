@@ -1,4 +1,4 @@
 .checkbox-buttons__heading {
-  @include h3-style();
+  @include h3-style($dark-100);
   margin-bottom: 18px;
 }

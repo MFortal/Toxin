@@ -13,7 +13,7 @@
 }
 
 .checkbox-list__text {
-  @include h3-style();
+  @include h3-style($dark-100);
   margin-bottom: 3px;
 }
 
