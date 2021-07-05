@@ -1,0 +1,75 @@
+.buttons__heading {
+  @include h3-style($dark-100);
+  @include marginBottomX(16px);
+}
+
+.buttons__buttons,
+.buttons__row {
+  display: flex;
+}
+
+.buttons__buttons {
+  flex-wrap: wrap;
+}
+
+.buttons__row {
+  margin-bottom: 25px;
+}
+
+.buttons__row_2 {
+  margin-bottom: 24px;
+}
+
+.buttons__row_3 {
+  margin-left: -5px;
+  margin-bottom: 24px;
+}
+
+.buttons__buttons_1 {
+  margin-left: 1px;
+  margin-right: 18px;
+}
+
+.buttons__buttons_3 {
+  margin-right: 19px;
+}
+
+.buttons__buttons_5 {
+  margin-right: 9px;
+}
+
+.buttons__button {
+  width: 99px;
+  height: 44px;
+  border-radius: 22px;
+  border: none;
+  @include h3-style(#fff);
+  background: $gradient;
+}
+
+.buttons__button_unfilled {
+  color: $purple;
+  background: transparent;
+  box-sizing: border-box;
+  border: 2px solid $purple;
+}
+
+.buttons__button_opacity {
+  opacity: 0.5;
+}
+
+.buttons__button_text {
+  @include h3-style($purple);
+}
+
+.buttons__button_textDark {
+  @include h3-style($dark-50);
+}
+
+.buttons__button_text,
+.buttons__button_textDark {
+  border: none;
+  background: none;
+  width: auto;
+  height: auto;
+}

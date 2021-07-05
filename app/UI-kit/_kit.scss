@@ -26,18 +26,27 @@
 @import "content/_dropdown-guests-apply/_dropdown-guests-apply";
 @import "content/_rich-checkbox-buttons/_rich-checkbox-buttons";
 @import "content/_post/_post";
+@import "content/_buttons/_buttons";
+@import "content/_button_arrow/_button_arrow";
 
 .main {
-  margin: 0 140px;
   display: flex;
+  margin: 0 140px;
+}
+
+.row {
+  width: 320px;
+  margin-right: 126px;
 }
 
 .column {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 320px;
-  margin-right: 126px;
+}
+
+.row_second {
+  margin-right: 72px;
 }
 
 .column_post {
@@ -117,4 +126,9 @@
 .richCheckboxButtons-kit {
   margin-top: 245px;
   @include marginBottomX(222px);
+}
+
+.rangeSlider-kit {
+  height: 97px;
+  border: 1px solid $purple;
 }
