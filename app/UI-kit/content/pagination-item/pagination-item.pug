@@ -1,0 +1,8 @@
+ul.pagination-item__list
+  each opt in options 
+    li.pagination-item__item 
+      a(class='pagination-item__a pagination-item__a_active' href='#') #{opt}
+  li.pagination-item__item.pagination-item__item_arrow
+      a(class='pagination-item__a pagination-item__a_arrow' href='#')
+        .pagination-item__arrow
+p.pagination-item__text #{text}

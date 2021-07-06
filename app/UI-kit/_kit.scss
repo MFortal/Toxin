@@ -28,6 +28,8 @@
 @import "content/_post/_post";
 @import "content/_buttons/_buttons";
 @import "content/_button_arrow/_button_arrow";
+@import "content/pagination-item/pagination-item";
+@import "content/_pagination/_pagination";
 @import "content/_dropdown-guests/_dropdown-guests";
 @import "content/ul/ul";
 @import "content/_bullet-list/_bullet-list";
@@ -141,7 +143,11 @@
 }
 
 .buttons-kit {
-  @include marginBottomX(334px);
+  @include marginBottomX(10px);
+}
+
+.pagination-kit {
+  @include marginBottomX(221px);
 }
 
 .dropdownGuests2-kit {
