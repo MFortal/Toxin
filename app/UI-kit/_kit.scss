@@ -28,6 +28,7 @@
 @import "content/_post/_post";
 @import "content/_buttons/_buttons";
 @import "content/_button_arrow/_button_arrow";
+@import "content/_dropdown-guests/_dropdown-guests";
 
 .main {
   display: flex;
@@ -131,4 +132,8 @@
 .rangeSlider-kit {
   height: 97px;
   border: 1px solid $purple;
+}
+
+.buttons-kit {
+  margin-bottom: 334px;
 }

@@ -1,0 +1,37 @@
+.dropdown-guests {
+  @include widthInput($widthMax);
+}
+
+.dropdown-guests__selected {
+  width: $widthMax;
+}
+
+.dropdown-guests__selected_text {
+  display: flex;
+}
+
+.dropdown-menu__buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  height: 40px;
+}
+
+.dropdown-menu__buttons_apply {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: $purple;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.dropdown-menu__buttons {
+  justify-content: space-between;
+}
+
+.dropdown-menu__buttons_apply {
+  margin-left: 8px;
+}
