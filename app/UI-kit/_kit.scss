@@ -29,6 +29,8 @@
 @import "content/_buttons/_buttons";
 @import "content/_button_arrow/_button_arrow";
 @import "content/_dropdown-guests/_dropdown-guests";
+@import "content/ul/ul";
+@import "content/_bullet-list/_bullet-list";
 
 .main {
   display: flex;
@@ -124,6 +126,10 @@
   @include marginBottomX(179px);
 }
 
+.dropdownGuestsApply-kit {
+  @include marginBottomX(11px);
+}
+
 .richCheckboxButtons-kit {
   margin-top: 245px;
   @include marginBottomX(222px);
@@ -135,5 +141,9 @@
 }
 
 .buttons-kit {
-  margin-bottom: 334px;
+  @include marginBottomX(334px);
+}
+
+.dropdownGuests2-kit {
+  @include marginBottomX(257px);
 }
