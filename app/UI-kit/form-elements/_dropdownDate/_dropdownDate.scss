@@ -9,3 +9,11 @@
 .dropdownDate {
   @include default($dark-25, $widthMin);
 }
+
+.dropdownDate__container {
+  display: flex;
+}
+
+.dropdownDate__container_1 {
+  margin-right: 21px;
+}
