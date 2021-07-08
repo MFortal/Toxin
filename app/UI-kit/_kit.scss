@@ -26,6 +26,8 @@
 @import "content/_dropdown-guests-apply/_dropdown-guests-apply";
 @import "content/_rich-checkbox-buttons/_rich-checkbox-buttons";
 @import "content/_post/_post";
+@import "content/range-slider/range-slider";
+@import "content/_range-slider/_range-slider";
 @import "content/_buttons/_buttons";
 @import "content/_button_arrow/_button_arrow";
 @import "content/pagination-item/pagination-item";
@@ -138,8 +140,8 @@
 }
 
 .rangeSlider-kit {
-  height: 97px;
-  border: 1px solid $purple;
+  margin-top: 10px;
+  @include marginBottomX(44px);
 }
 
 .buttons-kit {

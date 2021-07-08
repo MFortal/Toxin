@@ -1,0 +1,11 @@
+.range-slider {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.range-slider__heading {
+  @include h3-style($dark-100);
+  margin-top: 2px;
+  margin-bottom: 22px;
+}
