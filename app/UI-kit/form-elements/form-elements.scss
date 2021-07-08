@@ -1,10 +1,8 @@
 @import "mixin";
-@import "../header/header";
 @import "input/input";
 @import "_input-focus/_input-focus";
 @import "dropdown/dropdown";
 @import "_dropdownDate/_dropdownDate";
-@import "_dropdownDate2/_dropdownDate2";
 @import "_dropdownFilterDate/_dropdownFilterDate";
 @import "_input-subscription/_input-subscription";
 @import "_dropdown-default/_dropdown-default";
@@ -82,13 +80,7 @@
 
 .dropdownDate-kit {
   @include marginBottomX(28px);
-  display: flex;
 }
-
-.dropdownDate1-kit {
-  margin-right: 21px;
-}
-
 .dropdownFilterDate-kit {
   @include marginBottomX(29px);
 }
