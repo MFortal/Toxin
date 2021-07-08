@@ -1,0 +1,157 @@
+@import "mixin";
+@import "../header/header";
+@import "input/input";
+@import "_input-focus/_input-focus";
+@import "dropdown/dropdown";
+@import "_dropdownDate/_dropdownDate";
+@import "_dropdownDate2/_dropdownDate2";
+@import "_dropdownFilterDate/_dropdownFilterDate";
+@import "_input-subscription/_input-subscription";
+@import "_dropdown-default/_dropdown-default";
+@import "dropdown-menu/dropdown-menu";
+@import "checkbox-list/checkbox-list";
+@import "checkbox-item/checkbox-item";
+@import "card-benefit/card-benefit";
+@import "_card-benefit-comfort/card-benefit-comfort";
+@import "_card-benefit-convenience/card-benefit-convenience";
+@import "_checkbox-buttons/checkbox-buttons";
+@import "radio-button/radio-button";
+@import "_radio-buttons/_radio-buttons";
+@import "_toggle/_toggle";
+@import "button/button";
+@import "like-button/like-button";
+@import "_like-buttons/_like-buttons";
+@import "_rate-stars/_rate-stars";
+@import "_rate-buttons/_rate-buttons";
+@import "_dropdown-guests-apply/_dropdown-guests-apply";
+@import "_rich-checkbox-buttons/_rich-checkbox-buttons";
+@import "_post/_post";
+@import "range-slider/range-slider";
+@import "_range-slider/_range-slider";
+@import "_buttons/_buttons";
+@import "_button_arrow/_button_arrow";
+@import "pagination-item/pagination-item";
+@import "_pagination/_pagination";
+@import "_dropdown-guests/_dropdown-guests";
+@import "ul/ul";
+@import "_bullet-list/_bullet-list";
+
+.main {
+  display: flex;
+  margin: 0 140px;
+}
+
+.row {
+  width: 320px;
+  margin-right: 126px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.row_second {
+  margin-right: 72px;
+}
+
+.column_post {
+  width: 400px;
+}
+
+.input-default-kit {
+  @include marginBottomX(7px);
+}
+
+.dropdownDefault-kit {
+  @include marginBottomX(8px);
+}
+
+.input-focus-kit {
+  @include marginBottomX(8px);
+}
+
+.dropdownGuests-kit {
+  @include marginBottomX(11px);
+}
+
+.input-masked-kit {
+  @include marginBottomX(29px);
+}
+
+.dropdownDate-kit {
+  @include marginBottomX(28px);
+  display: flex;
+}
+
+.dropdownDate1-kit {
+  margin-right: 21px;
+}
+
+.dropdownFilterDate-kit {
+  @include marginBottomX(29px);
+}
+
+.inputSubscription-kit {
+  @include marginBottomX(88px);
+}
+
+.dropdownMenu-kit {
+  @include marginBottomX(160px);
+}
+
+.checkboxList-kit {
+  @include marginBottomX(20px);
+}
+
+.checkboxList2-kit {
+  @include marginBottomX(254px);
+}
+
+.checkboxButtons-kit {
+  margin-top: 11px;
+  @include marginBottomX(41px);
+}
+
+.radioButtons-kit {
+  @include marginBottomX(31px);
+}
+
+.toggleButtons-kit {
+  @include marginBottomX(29px);
+}
+
+.likeButtons-kit {
+  @include marginBottomX(40px);
+}
+
+.rateButtons-kit {
+  @include marginBottomX(179px);
+}
+
+.dropdownGuestsApply-kit {
+  @include marginBottomX(11px);
+}
+
+.richCheckboxButtons-kit {
+  margin-top: 245px;
+  @include marginBottomX(222px);
+}
+
+.rangeSlider-kit {
+  margin-top: 10px;
+  @include marginBottomX(44px);
+}
+
+.buttons-kit {
+  @include marginBottomX(10px);
+}
+
+.pagination-kit {
+  @include marginBottomX(221px);
+}
+
+.dropdownGuests2-kit {
+  @include marginBottomX(257px);
+}
