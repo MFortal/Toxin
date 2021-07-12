@@ -1,0 +1,12 @@
+@import "card-search/card-search.scss";
+//@import "../form-elements/dropdown/dropdown.scss";
+
+.cards__main {
+  display: flex;
+  margin: 19px 140px 0 139px;
+}
+.cards__column {
+  border: 1px solid red;
+  margin-right: 40px;
+  height: 500px;
+}
