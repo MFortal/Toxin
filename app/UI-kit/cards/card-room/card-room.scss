@@ -1,0 +1,143 @@
+.card-room {
+  display: flex;
+  flex-direction: column;
+}
+.card-room__number {
+  @include h1-style();
+  margin-left: 4px;
+}
+
+.card-room__sing {
+  @include text-style($dark-100);
+  margin-bottom: 2px;
+}
+
+.card-room__type {
+  @include h3-style($purple);
+  margin-bottom: 1px;
+}
+
+.card-room__heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 39px;
+}
+
+.card-room__heading_number-room {
+  display: flex;
+  align-items: flex-end;
+}
+
+.card-room__heading_price {
+  display: flex;
+  @include text-style($dark-50);
+  margin-right: 1px;
+  margin-bottom: 1px;
+}
+
+.card-room__heading_desc {
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.card-room__guests_buttons {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  height: 40px;
+}
+
+.card-room__column_title {
+  width: 214px;
+}
+
+.card-room__column_title,
+.card-room__column_price {
+  @include body-style-text();
+}
+
+.card-room__dates {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 9px;
+}
+
+.card-room__guests {
+  margin-top: 9px;
+}
+
+.card-room__price {
+  margin-top: 18px;
+  margin-left: 1px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.card-room__column {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.card-room__column_info {
+  display: flex;
+}
+
+.card-room__column_flag {
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  color: $dark-25;
+
+  width: 20px;
+  height: 20px;
+
+  border: 1px solid $dark-25;
+  box-sizing: border-box;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: 5px;
+  margin-top: 1px;
+}
+
+.card-room__column_price {
+  margin-right: 1px;
+}
+
+.card-room__total {
+  display: flex;
+  align-items: flex-end;
+
+  margin-top: -12px;
+  margin-left: 1px;
+  margin-bottom: 21px;
+}
+
+.card-room__total_title,
+.card-room__total_sum {
+  @include h2-style();
+}
+
+.card-room__total_filler {
+  width: 182px;
+  height: 1px;
+  margin-bottom: 4px;
+  border: 1px dashed $dark-25;
+  box-sizing: border-box;
+}
+
+.card-search__text-button {
+  margin-left: -4px;
+  margin-top: 10px;
+}
+
+.card-room__button {
+  margin-bottom: 24px;
+}

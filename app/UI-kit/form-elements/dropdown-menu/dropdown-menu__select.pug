@@ -1,0 +1,16 @@
+block variables
+.dropdown-menu__select
+    div(class='dropdown-menu__selectedItem ' + classDivSelected) 
+      div(class='dropdown-menu__selectedItem_text '+ classDivSelectedText) #{textSelected}
+      .dropdown-menu__selectedItem_arrow
+    .dropdown-menu__list
+      each opt in options
+        .dropdown-menu__listItem 
+          .dropdown-menu__listItemText #{opt}
+          .dropdown-menu__counter
+            div(class="dropdown-menu__buttonMinus dropdown-menu__counter-btn opacity_minus" 
+            data-direction="minus") -
+            .dropdown-menu__count 0
+            div(class="dropdown-menu__buttonPlus dropdown-menu__counter-btn" 
+            data-direction="plus") +
+      block content

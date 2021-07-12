@@ -12,7 +12,7 @@
 
 .dropdown-menu__buttons {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-content: center;
   height: 40px;
 }
@@ -26,10 +26,6 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
-}
-
-.dropdown-menu__buttons {
-  justify-content: space-between;
 }
 
 .dropdown-menu__buttons_apply {

@@ -1,0 +1,52 @@
+- var heading = 'Найдём номера под ваши пожелания'
+
+.card.card-room
+  .card-room__heading
+    .card-room__heading_number-room
+      .card-room__sing №
+      .card-room__number 888
+      .card-room__type люкс
+    .card-room__heading_price
+      .card-room__heading_sum 9 990₽&nbsp;
+      .card-room__heading_desc в сутки
+
+
+  .card-room__dates
+    .card-room__dates_arrival
+      - var nameField = 'прибытие'
+      - var optSelect = '19.08.2019'
+      - var options = ['11.11.2020', '20.12.2020', '31.09.1999'] 
+      - var classDropdown = 'dropdownDate';
+      - var classDivDropdown = 'divDropdown-widthMin'
+      - var textField = ''
+      include ../../form-elements/dropdown/dropdown.pug
+    .card-room__dates_departure
+      - var nameField = 'выезд'
+      - var optSelect = '23.08.2019'
+      - var options = ['11.11.2020', '20.12.2020', '31.09.1999'] 
+      include ../../form-elements/dropdown/dropdown.pug
+
+  .card-room__guests
+    include card-room__guests.pug
+
+    
+  .card-room__price
+    - var priceItem = [{title: '9 990₽ х 4 суток', flag : false, price:'39 960₽'}, {title: 'Сбор за услуги: скидка 2 179₽', flag : true, price:'0₽'},{title: 'Сбор за дополнительные услуги', flag : true, price:'300₽'}]
+      each item in priceItem
+        .card-room__column
+          .card-room__column_info
+            .card-room__column_title #{item.title}
+            if item.flag 
+              .card-room__column_flag i
+          .card-room__column_price #{item.price}
+
+  .card-room__total
+    .card-room__total_title Итого
+    .card-room__total_filler
+    .card-room__total_sum 38 081₽
+
+  .card-room__button
+    - var opt = 'забронировать'
+    - var classButton = 'buttons__button'
+    - var classTextButtonArrow = 'card-room__text-button'
+    include ../../form-elements/_button_arrow/_button_arrow.pug
