@@ -1,4 +1,5 @@
 @import "card-search/card-search.scss";
+@import "card-registration/card-registration.scss";
 //@import "../form-elements/dropdown/dropdown.scss";
 
 .cards__main {
@@ -9,4 +10,12 @@
   border: 1px solid red;
   margin-right: 40px;
   height: 500px;
+}
+
+.card-search {
+  margin-bottom: 40px;
+}
+
+.card-registration {
+  margin-bottom: 140px;
 }
