@@ -30,6 +30,13 @@
   line-height: 18px;
 }
 
+@mixin text-style($color) {
+  font-family: "Montserrat-Bold", sans-serif;
+  color: $color;
+  font-size: 14px;
+  line-height: 18px;
+}
+
 @mixin marginBottomX($x) {
   margin-bottom: $x;
 }
