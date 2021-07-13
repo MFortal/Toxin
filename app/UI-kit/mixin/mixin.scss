@@ -81,3 +81,15 @@
   color: $dark-75;
   margin: 0;
 }
+
+@mixin button-apply() {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: $purple;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  margin-left: 8px;
+}

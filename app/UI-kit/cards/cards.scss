@@ -2,6 +2,7 @@
 @import "card-registration/card-registration.scss";
 @import "card-login/card-login.scss";
 @import "card-room/card-room.scss";
+@import "calendar/calendar.scss";
 //@import "../form-elements/dropdown/dropdown.scss";
 
 .cards__main {
@@ -22,4 +23,9 @@
 
 .cards__column_room {
   margin-bottom: 39px;
+}
+
+.cards__column_calendar {
+  margin-left: 1px;
+  margin-top: -1px;
 }

@@ -18,16 +18,5 @@
 }
 
 .dropdown-menu__buttons_apply {
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-  color: $purple;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-}
-
-.dropdown-menu__buttons_apply {
-  margin-left: 8px;
+  @include button-apply();
 }
