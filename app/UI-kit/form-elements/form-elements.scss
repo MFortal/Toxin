@@ -58,38 +58,39 @@
 }
 
 .input-default-kit {
-  @include marginBottomX(7px);
+  margin-top: 11px;
+  @include marginBottomX(20px);
 }
 
 .dropdownDefault-kit {
-  @include marginBottomX(8px);
+  @include marginBottomX(20px);
 }
 
 .input-focus-kit {
-  @include marginBottomX(8px);
+  @include marginBottomX(20px);
 }
 
 .dropdownGuests-kit {
-  @include marginBottomX(11px);
+  @include marginBottomX(23px);
 }
 
 .input-masked-kit {
-  @include marginBottomX(29px);
+  @include marginBottomX(40px);
 }
 
 .dropdownDate-kit {
-  @include marginBottomX(28px);
+  @include marginBottomX(41px);
 }
 .dropdownFilterDate-kit {
-  @include marginBottomX(29px);
+  @include marginBottomX(41px);
 }
 
 .inputSubscription-kit {
-  @include marginBottomX(88px);
+  @include marginBottomX(100px);
 }
 
 .dropdownMenu-kit {
-  @include marginBottomX(160px);
+  @include marginBottomX(148px);
 }
 
 .checkboxList-kit {
@@ -118,16 +119,16 @@
 }
 
 .rateButtons-kit {
-  @include marginBottomX(179px);
+  @include marginBottomX(191px);
 }
 
 .dropdownGuestsApply-kit {
-  @include marginBottomX(11px);
+  @include marginBottomX(245px);
+  margin-left: 1px;
 }
 
 .richCheckboxButtons-kit {
-  margin-top: 245px;
-  @include marginBottomX(222px);
+  @include marginBottomX(221px);
 }
 
 .rangeSlider-kit {
@@ -140,9 +141,9 @@
 }
 
 .pagination-kit {
-  @include marginBottomX(221px);
+  @include marginBottomX(233px);
 }
 
 .dropdownGuests2-kit {
-  @include marginBottomX(257px);
+  @include marginBottomX(245px);
 }

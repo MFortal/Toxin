@@ -18,11 +18,8 @@
 }
 
 .dropdown-guests-apply__buttons_apply {
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-  color: $purple;
+  @include h3-style($purple);
+  margin: 0;
   border: none;
   background-color: transparent;
   cursor: pointer;

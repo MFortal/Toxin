@@ -7,7 +7,6 @@
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-end;
-  font-weight: normal;
   font-size: 14px;
   line-height: 18px;
   color: $dark-50;
@@ -44,14 +43,10 @@
 
 .arrow_rotate {
   transform: rotate(180deg);
+  background-position: right 16px bottom 17px;
 }
 
 .checkbox-item__heading {
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 18px;
-  color: rgba(31, 32, 65, 0.75);
-  margin: 0px;
-  margin-bottom: 5px;
-  margin-left: 1px;
+  @include text-style($dark-75);
+  margin: 0px 0px 5px 1px;
 }

@@ -62,11 +62,8 @@
 
 .dropdown-menu__listItemText,
 .dropdown-menu__count {
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-  color: $dark-100;
+  @include h3-style($dark-100);
+  margin-bottom: 5px;
 }
 
 .dropdown-menu__count {
@@ -93,8 +90,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 5px;
-  margin-bottom: 7px;
+  margin: 7px 0px 7px -1px;
 }
 
 .dropdown-menu__select {
