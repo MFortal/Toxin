@@ -8,6 +8,7 @@
 
 .dropdownDate {
   @include default($dark-25, $widthMin);
+  padding-bottom: 3px;
 }
 
 .dropdownDate__container {

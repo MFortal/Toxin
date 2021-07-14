@@ -1,33 +1,25 @@
 .card-registration {
-  height: 646px;
   box-sizing: border-box;
   overflow: hidden;
-}
-
-.card-registration__information {
-  margin-left: 1px;
+  padding-left: 30px;
 }
 
 .card-registration__heading {
-  margin-top: 39px;
-  margin-left: -1px;
   margin-bottom: 21px;
+  margin-left: -1px;
 }
 
-.card-registration__name {
-  margin-bottom: 10px;
-}
-
+.card-registration__name,
 .card-registration__last-name {
-  margin-bottom: 10px;
+  margin: 0px 0px 10px 0px;
 }
 
 .card-registration__sex {
-  margin-bottom: 2px;
+  margin-bottom: 14px;
 }
 
 .card-registration__birth-date {
-  margin-bottom: 20px;
+  margin: 0px 0px 20px 0px;
 }
 
 .card-registration__login_heading {
@@ -47,7 +39,8 @@
 }
 
 .card-registration__button_text {
-  margin-left: -4px;
+  margin-left: -1px;
+  margin-bottom: 1px;
 }
 
 .card-registration__text_log-in {
@@ -55,13 +48,12 @@
 }
 
 .card-registration__button {
-  margin-bottom: 28px;
+  margin-bottom: 30px;
 }
 
 .card-registration__footer {
   display: flex;
   justify-content: space-between;
-  margin-bottom: -4px;
 }
 
 .card-registration__button {
@@ -69,6 +61,11 @@
   margin-top: 2px;
 }
 
+.card-registration__button-log-in {
+  margin-right: 1px;
+}
+
 .card-registration__text {
   margin-left: 1px;
+  margin-top: 12px;
 }

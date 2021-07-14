@@ -1,14 +1,13 @@
 //@import "../form-elements/dropdownDate/dropdownDate.scss";
 
-.card,
-.card-search {
+.card {
   width: $width380;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  padding: 0 30px;
+  padding: 39px 30px 24px 29px;
 
   display: flex;
   flex-wrap: wrap;
@@ -16,7 +15,6 @@
 }
 
 .card-search {
-  height: 372px;
   box-sizing: border-box;
   overflow: hidden;
 }
@@ -25,13 +23,10 @@
 .card-search__heading {
   @include h1-style();
   width: $widthMax;
-  margin-top: 36px;
-  margin-bottom: 11px;
 }
 
 .card-search__heading {
-  margin-top: 38px;
-  margin-bottom: 10px;
+  margin-bottom: 22px;
 }
 
 .card-search__guests {
@@ -39,17 +34,13 @@
 }
 
 .card-search__text-button {
-  margin-left: -7px;
-}
-
-.card-search__button {
-  margin-bottom: 26px;
-  margin-left: 2px;
+  margin-left: -3px;
+  margin-top: -2px;
 }
 
 .card-search__dates {
   display: flex;
-  margin-bottom: 9px;
+  margin-bottom: 21px;
 }
 
 .card-search__dates_arrival {

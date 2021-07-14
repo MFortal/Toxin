@@ -21,7 +21,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  margin-top: 39px;
+  margin-bottom: 21px;
 }
 
 .card-room__heading_number-room {
@@ -61,16 +61,16 @@
 .card-room__dates {
   display: flex;
   justify-content: space-between;
-  margin-top: 9px;
+  margin-bottom: 20px;
 }
 
 .card-room__guests {
-  margin-top: 9px;
+  margin-bottom: 7px;
 }
 
 .card-room__price {
-  margin-top: 18px;
   margin-left: 1px;
+  margin-bottom: 11px;
 
   display: flex;
   flex-direction: column;
@@ -114,8 +114,8 @@
 .card-room__total {
   display: flex;
   align-items: flex-end;
+  height: 23px;
 
-  margin-top: -12px;
   margin-left: 1px;
   margin-bottom: 21px;
 }
@@ -134,10 +134,6 @@
 }
 
 .card-search__text-button {
-  margin-left: -4px;
-  margin-top: 10px;
-}
-
-.card-room__button {
-  margin-bottom: 24px;
+  margin-left: -5px;
+  margin-bottom: 1px;
 }

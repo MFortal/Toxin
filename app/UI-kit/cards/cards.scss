@@ -7,17 +7,18 @@
 
 .cards__main {
   display: flex;
-  margin: 19px 140px 0 139px;
+  margin: 19px 140px 0 140px;
 }
 .cards__column {
   margin-right: 40px;
 }
 
-.card-search {
+.cards__column_search {
   margin-bottom: 40px;
+  margin-top: -1px;
 }
 
-.card-registration {
+.cards__column_registration {
   margin-bottom: 140px;
 }
 
@@ -28,4 +29,8 @@
 .cards__column_calendar {
   margin-left: 1px;
   margin-top: -1px;
+}
+
+.card__column:last-of-type {
+  margin-left: -1px;
 }

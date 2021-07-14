@@ -1,6 +1,6 @@
 .calendar {
   width: 320px;
-  height: 369px;
+  margin-left: -1px;
 
   background: #ffffff;
   border: 1px solid $dark-25;
@@ -92,6 +92,7 @@
 .calendar__footer {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 18px;
 }
 
 .calendar__footer_button {
