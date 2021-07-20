@@ -2,44 +2,9 @@
   display: flex;
   flex-direction: column;
 }
-.card-room__number {
-  @include h1-style();
-  margin-left: 4px;
-}
-
-.card-room__sing {
-  @include text-style($dark-100);
-  margin-bottom: 2px;
-}
-
-.card-room__type {
-  @include h3-style($purple);
-  margin-bottom: 1px;
-}
 
 .card-room__heading {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
   margin-bottom: 21px;
-}
-
-.card-room__heading_number-room {
-  display: flex;
-  align-items: flex-end;
-}
-
-.card-room__heading_price {
-  display: flex;
-  @include text-style($dark-50);
-  margin-right: 1px;
-  margin-bottom: 1px;
-}
-
-.card-room__heading_desc {
-  font-family: "Montserrat-Regular", sans-serif;
-  font-size: 12px;
-  line-height: 18px;
 }
 
 .card-room__guests_buttons {

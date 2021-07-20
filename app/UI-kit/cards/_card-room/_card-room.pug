@@ -1,15 +1,13 @@
 - var heading = 'Найдём номера под ваши пожелания'
 
 .card.card-room
-  .card-room__heading
-    .card-room__heading_number-room
-      .card-room__sing №
-      .card-room__number 888
-      .card-room__type люкс
-    .card-room__heading_price
-      .card-room__heading_sum 9 990₽&nbsp;
-      .card-room__heading_desc в сутки
-
+  - var classDiv = 'card-room__heading'
+  - var symbol = '№'
+  - var number = '888'
+  - var type = 'люкс'
+  - var sum = '9 990₽'
+  - var desc = 'в сутки'
+  include ../card__header/card__header.pug
 
   .card-room__dates
     .card-room__dates_arrival
@@ -27,7 +25,7 @@
       include ../../form-elements/dropdown/dropdown.pug
 
   .card-room__guests
-    include card-room__guests.pug
+    include _card-room__guests.pug
 
     
   .card-room__price
