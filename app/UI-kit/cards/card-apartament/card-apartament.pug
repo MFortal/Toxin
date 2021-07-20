@@ -1,0 +1,28 @@
+- var classNumber = 'card-apartament__number'
+- var classDiv = 'card-apartament__header'
+
+.card-apartament
+  .card-apartament__slider
+    img( class='card-apartament__slider_img ' src=srcImg)
+    if flag 
+      .card-apartament__arrow_left
+        img(class='card-apartament__arrow_img' src='UI-kit/cards/card-apartament/expand_more.svg')
+      .card-apartament__arrow_right
+        img(class='card-apartament__arrow_img card-apartament__img-right' src='UI-kit/cards/card-apartament/expand_more.svg')
+    
+    .card-apartament__radio
+      - for(var i=0; i<4; i++)
+        .card-apartament__radio_form
+          input(id=i class='card-apartament__radio_input' type='radio' name='slider')
+          label(class='card-apartament__radio_label' for=i)
+
+  .card-apartament__info
+    .card-apartament__info_row
+      include ../card__header/card__header.pug
+
+    .card-apartament__info_rating
+      .card-apartament__stars
+        include ../../form-elements/_rate-stars/_rate-stars.pug
+      .card-apartament__review
+        p.card-apartament__review_number #{numberRev}&nbsp;
+        p.card-apartament__review_word #{wordRev}Отзывов

@@ -1,9 +1,10 @@
 @import "card-search/card-search.scss";
 @import "card-registration/card-registration.scss";
 @import "card-login/card-login.scss";
-@import "card-room/card-room.scss";
+@import "card__header/card__header.scss";
+@import "_card-room/_card-room.scss";
 @import "calendar/calendar.scss";
-//@import "../form-elements/dropdown/dropdown.scss";
+@import "card-apartament/card-apartament.scss";
 
 .cards__main {
   display: flex;
@@ -29,8 +30,13 @@
 .cards__column_calendar {
   margin-left: 1px;
   margin-top: -1px;
+  margin-bottom: 40px;
 }
 
 .card__column:last-of-type {
   margin-left: -1px;
+}
+
+.cards__column_apartament {
+  margin-bottom: 39.5px;
 }
