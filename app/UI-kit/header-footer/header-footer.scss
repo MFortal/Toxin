@@ -1,4 +1,8 @@
+@import "../header-footer/icon/icon";
+@import "../header-footer/links/links";
 @import "../header-footer/header-start/header-start";
+@import "../header-footer/_footer/_footer";
+@import "../header-footer/_footer-min/footer-min";
 
 .hf__main {
   padding-top: 8px;
@@ -6,4 +10,8 @@
 
 .hf__row {
   margin-bottom: 40px;
+}
+
+.hf__footer-min {
+  margin: 0 336px;
 }

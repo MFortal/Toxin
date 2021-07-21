@@ -1,0 +1,101 @@
+.footer {
+  padding-top: 100px;
+}
+
+.footer__menu {
+  padding: 0 140px;
+}
+
+.footer__menu {
+  border-bottom: 1px solid $dark-10;
+  padding-bottom: 79px;
+  display: flex;
+}
+
+.footer__links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 141px 22px 140px;
+  height: 70px;
+  box-sizing: border-box;
+}
+
+.booking__text,
+.subscription__text {
+  @include body-style-text();
+}
+
+.footer__menu_booking {
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 40px;
+}
+
+.booking__icon {
+  margin-bottom: 17px;
+}
+
+.footer__menu_nav,
+.footer__menu_subscription {
+  display: flex;
+  padding-top: 4px;
+}
+
+.nav__header,
+.subscription__header {
+  @include h3-style($dark-100);
+  margin-bottom: 22px;
+}
+
+.nav__header {
+  margin-bottom: 22px;
+}
+
+.subscription__header {
+  margin-bottom: 18px;
+}
+
+.nav__item {
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 21px;
+  color: $dark-50;
+}
+
+.nav__item_nav {
+  margin-right: 57px;
+}
+
+.nav__item_info {
+  margin-right: 93px;
+}
+
+.nav__item_support {
+  margin-right: 52px;
+}
+
+.footer__menu_subscription {
+  flex-direction: column;
+  width: 260px;
+}
+
+.subscription__text {
+  margin-bottom: 23px;
+}
+
+.footer__input {
+  background-position: right 12px center;
+  width: 260px;
+  padding-bottom: 4px;
+}
+
+.footer__links_twitter {
+  padding-bottom: 1px;
+}
+
+.footer__links_block {
+  margin-bottom: -3px;
+}

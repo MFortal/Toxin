@@ -1,26 +1,20 @@
-.header-start {
-  display: flex;
-  justify-content: space-between;
-
+.header-footer {
   width: 1440px;
-  height: 70px;
   background: white;
-  padding: 0 140px;
   box-sizing: border-box;
   box-shadow: 0px 10px 20px $dark-5;
 }
 
+.header-start {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 140px;
+  height: 70px;
+  align-items: center;
+}
+
 .header-start__menu {
   display: flex;
-}
-
-.header-start__icon {
-  display: flex;
-  justify-content: center;
-}
-
-.header-start__icon_img {
-  margin-right: 12px;
 }
 
 .header-start__link_arrow {
