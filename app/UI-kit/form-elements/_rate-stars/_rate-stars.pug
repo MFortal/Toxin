@@ -1,4 +1,7 @@
-- var classButton = 'rate-button__button'
+- var classLabel = 'rate-stars__label '
+- var classInput = 'rate-stars__input '
 
-- for (var x = 0; x < 5; x++)
-        include ../button/button
+.rate-stars
+  each item in items
+   input(id=item.id class=classInput type='radio' name=nameInput value=item.value checked=item.checked)
+   label(for=item.id class=classLabel)
