@@ -39,23 +39,13 @@
 }
 
 .buttons__button {
+  position: relative;
   width: 99px;
   height: 44px;
   border-radius: 22px;
   border: none;
   @include h3-style(#fff);
   background: $gradient;
-}
-
-.buttons__button_unfilled {
-  color: $purple;
-  background: transparent;
-  box-sizing: border-box;
-  border: 2px solid $purple;
-}
-
-.buttons__button_opacity {
-  opacity: 0.5;
 }
 
 .buttons__button_text {
@@ -72,4 +62,33 @@
   background: none;
   width: auto;
   height: auto;
+}
+
+.buttons__button_unfilled {
+  color: $purple;
+  box-sizing: border-box;
+  border: 2px solid transparent;
+  border-radius: 22px;
+  background: white;
+  background-clip: padding-box;
+}
+
+.buttons__button_unfilled::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  bottom: -2px;
+  left: -2px;
+  right: -2px;
+  background: $gradient;
+  z-index: -1;
+  border-radius: 22px;
+}
+
+.buttons__button_opacity.buttons__button_unfilled::after {
+  opacity: 0.5;
+}
+
+.buttons__button_opacity-full {
+  opacity: 0.5;
 }
