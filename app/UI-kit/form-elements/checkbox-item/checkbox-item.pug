@@ -5,6 +5,6 @@
         p(class='checkbox-item__heading ') #{opt.heading}
         p(class='checkbox-item__text '+ classText) #{opt.text}
     else
-      p(class='checkbox-item__text '+ classText) #{opt}
+      p(class='checkbox-item__text '+ classText) #{opt.text}
     div(class='checkbox-item__mark ' + classDivCheckbox)
-    input(type='checkbox' class= classButton)
+    input(type='checkbox' class= classButton checked=opt.checked)

@@ -41,7 +41,7 @@
 
 .toggle-button:checked::after {
   transform: translateX(calc(100% + 8px));
-  background-color: $purple;
+  background: $gradient;
 }
 
 .toggle-button:checked {
