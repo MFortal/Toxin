@@ -1,6 +1,6 @@
 block variables
-.dropdown-menu__select
-    div(class='dropdown-menu__selectedItem ' + classDivSelected) 
+div(class = flag ? 'dropdown-menu__select_widthAve ' + 'dropdown-menu__select ' + classDivSelected: 'dropdown-menu__select '+ classDivSelected)
+    div(class='dropdown-menu__selectedItem ') 
       div(class='dropdown-menu__selectedItem_text '+ classDivSelectedText) #{textSelected}
       .dropdown-menu__selectedItem_arrow
     .dropdown-menu__list
