@@ -99,9 +99,9 @@ Compiled-HTML/app/UI-kit/form-elements/_dropdown-default/_dropdown-default.html
 Compiled-HTML/app/UI-kit/form-elements/_dropdown-guests/_dropdown-guests.html
 Compiled-HTML/app/UI-kit/form-elements/_dropdown-guests-apply/_dropdown-guests-apply.html
 Compiled-HTML/app/UI-kit/form-elements/_dropdown-menu/_dropdown-menu.html
-Compiled-HTML/app/UI-kit/form-elements/_dropdownDate/_dropdownDate.html
-Compiled-HTML/app/UI-kit/form-elements/_dropdownFilterDate/_dropdownFilterDate.html
-Compiled-HTML/app/UI-kit/form-elements/_dropdownGuests/_dropdownGuests.html
+Compiled-HTML/app/UI-kit/form-elements/_dropdown-date/_dropdown-date.html
+Compiled-HTML/app/UI-kit/form-elements/_dropdown-filter-date/_dropdown-filter-date.html
+Compiled-HTML/app/UI-kit/form-elements/_dropdown-guest/_dropdown-guest.html
 Compiled-HTML/app/UI-kit/form-elements/_input-default/_input-default.html
 Compiled-HTML/app/UI-kit/form-elements/_input-focus/_input-focus.html
 Compiled-HTML/app/UI-kit/form-elements/_input-masked/_input-masked.html
