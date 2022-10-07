@@ -1,0 +1,71 @@
+.card-registration {
+  box-sizing: border-box;
+  overflow: hidden;
+  padding-left: 30px;
+}
+
+.card-registration__heading {
+  margin-bottom: 21px;
+  margin-left: -1px;
+}
+
+.card-registration__name,
+.card-registration__last-name {
+  margin: 0px 0px 10px 0px;
+}
+
+.card-registration__sex {
+  margin-bottom: 14px;
+}
+
+.card-registration__birth-date {
+  margin: 0px 0px 20px 0px;
+}
+
+.card-registration__login_heading {
+  @include h3-style($dark-100);
+}
+
+.card-registration__login_email {
+  margin-bottom: 10px;
+}
+
+.card-registration__login {
+  margin-bottom: 10px;
+}
+
+.card-registration__toggle {
+  margin-bottom: 9px;
+}
+
+.card-registration__button_text {
+  margin-left: -1px;
+  margin-bottom: 1px;
+}
+
+.card-registration__text_log-in {
+  @include inputPlaceholder(#000);
+}
+
+.card-registration__button {
+  margin-bottom: 30px;
+}
+
+.card-registration__footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-registration__button {
+  margin-right: 1px;
+  margin-top: 2px;
+}
+
+.card-registration__button-log-in {
+  margin-right: 1px;
+}
+
+.card-registration__text {
+  margin-left: 1px;
+  margin-top: 12px;
+}

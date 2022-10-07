@@ -1,0 +1,50 @@
+.range-slider__amount {
+  @include h3-style($dark-50);
+  margin-right: 54px;
+}
+
+.range-slider__slider {
+  width: 266px;
+  height: 6px;
+  background: #ffffff;
+  border: 1px solid $dark-25;
+  box-sizing: border-box;
+  border-radius: 3px;
+  position: relative;
+}
+
+.range-slider__range {
+  width: 33%;
+  height: 6px;
+  background: $gradient-secondary;
+  border-radius: 3px;
+  z-index: 1;
+  position: absolute;
+  left: 30%;
+}
+
+.range-slider__right-slider,
+.range-slider__left-slider {
+  width: 12px;
+  height: 12px;
+  background: $gradient-secondary;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  z-index: 2;
+  position: absolute;
+  margin-top: -5px;
+  cursor: pointer;
+}
+
+.range-slider__left-slider {
+  left: 28%;
+}
+
+.range-slider__right-slider {
+  left: 60%;
+}
+
+.range-slider__right-slider:active,
+.range-slider__left-slider:active {
+  transform: scale(1.2);
+}

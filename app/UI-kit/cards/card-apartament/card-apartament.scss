@@ -1,0 +1,127 @@
+.card-apartament {
+  background: white;
+  box-shadow: 0px 10px 20px $dark-5;
+  border-radius: 4px;
+
+  overflow: hidden;
+  width: 270px;
+  height: 257px;
+}
+
+.card-apartament__slider {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.card-apartament__slider_list {
+  position: absolute;
+}
+
+.card-apartament__info {
+  width: 233px;
+  margin: 0 auto;
+}
+
+.card-apartament__info_row {
+  margin-left: 1px;
+}
+
+.card-apartament__header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid $dark-10;
+  margin-bottom: 10px;
+}
+
+.card-apartament__review {
+  display: flex;
+  margin-right: 2px;
+  margin-top: 2px;
+}
+
+.card-apartament__review_number,
+.card-apartament__review_word {
+  @include inputPlaceholder($dark-50);
+}
+
+.card-apartament__review_number {
+  font-family: "Montserrat-Bold", sans-serif;
+}
+
+.card-apartament__info_rating {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-apartament__number {
+  font-size: 19px;
+  line-height: 23px;
+}
+
+.card-apartament__info_rating {
+  margin-left: 3px;
+}
+
+.card-apartament__arrow_left,
+.card-apartament__arrow_right {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  width: 42px;
+  height: 100%;
+  position: absolute;
+  height: 152px;
+  top: 0;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
+}
+
+.card-apartament__arrow_right {
+  right: 0;
+  transform: rotate(180deg);
+}
+
+.card-apartament__arrow_img {
+  width: 8px;
+  margin-left: 2px;
+  margin-top: -1px;
+}
+
+.card-apartament__img-right {
+  margin-top: 1px;
+}
+
+.card-apartament__radio {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  right: 15px;
+  bottom: 20px;
+  width: 41.25px;
+}
+
+.card-apartament__radio_label {
+  width: 7.5px;
+  height: 7.49px;
+  border: 1px solid white;
+  border-radius: 4px;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 5px 5px rgba(31, 32, 65, 0.3));
+  cursor: pointer;
+}
+
+.card-apartament__radio_input {
+  display: none;
+}
+
+.card-apartament__radio_label {
+  display: block;
+  width: 7.5px;
+  height: 7.49px;
+  cursor: pointer;
+  border: 1px solid white;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 5px 5px rgba(31, 32, 65, 0.3));
+}
+
+.card-apartament__radio_input:checked + .card-apartament__radio_label {
+  background-color: white;
+}

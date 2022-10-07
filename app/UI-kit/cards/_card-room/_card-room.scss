@@ -1,0 +1,104 @@
+.card-room {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-room__heading {
+  margin-bottom: 21px;
+}
+
+.card-room__guests_buttons {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  height: 40px;
+}
+
+.card-room__column_title {
+  width: 214px;
+}
+
+.card-room__column_title,
+.card-room__column_price {
+  @include body-style-text();
+}
+
+.card-room__dates {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.card-room__guests {
+  margin-bottom: 7px;
+}
+
+.card-room__price {
+  margin-left: 1px;
+  margin-bottom: 11px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.card-room__column {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.card-room__column_info {
+  display: flex;
+}
+
+.card-room__column_flag {
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  color: $dark-25;
+
+  width: 20px;
+  height: 20px;
+
+  border: 1px solid $dark-25;
+  box-sizing: border-box;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: 5px;
+  margin-top: 1px;
+}
+
+.card-room__column_price {
+  margin-right: 1px;
+}
+
+.card-room__total {
+  display: flex;
+  align-items: flex-end;
+  height: 23px;
+
+  margin-left: 1px;
+  margin-bottom: 21px;
+}
+
+.card-room__total_title,
+.card-room__total_sum {
+  @include h2-style();
+}
+
+.card-room__total_filler {
+  width: 182px;
+  height: 1px;
+  margin-bottom: 4px;
+  border: 1px dashed $dark-25;
+  box-sizing: border-box;
+}
+
+.card-search__text-button {
+  margin-left: -5px;
+  margin-bottom: 1px;
+}

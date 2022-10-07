@@ -1,0 +1,4 @@
+.like-button__heading {
+  @include h3-style($dark-100);
+  @include marginBottomX(15px);
+}

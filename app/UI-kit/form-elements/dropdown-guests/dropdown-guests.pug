@@ -1,0 +1,11 @@
+extends ../dropdown-menu/dropdown-menu.pug
+
+block variables
+ - var classDivDropdown = 'dropdown-guests'
+ - var classDivSelectedText ='dropdown-guests__selected_text'
+
+block content
+ .dropdown-menu__buttons
+  button(type='submit' class='dropdown-menu__buttons_apply') Очистить
+  button(type='submit' class='dropdown-menu__buttons_apply') Применить
+  

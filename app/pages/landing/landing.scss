@@ -1,0 +1,23 @@
+.landing {
+  background-image: url("image.jpg");
+  background-repeat: no-repeat;
+  background-position: 0% 100%;
+  height: 830px;
+  width: 1440px;
+  position: relative;
+}
+
+.landing__text {
+  @include body-style-text();
+  text-align: right;
+  width: 297px;
+  position: absolute;
+  right: 134px;
+  bottom: 21px;
+}
+
+.landing__card {
+  position: absolute;
+  top: 70px;
+  left: 140px;
+}

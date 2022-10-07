@@ -1,0 +1,10 @@
+- var classButton = 'checkbox-item__itemCheck'
+- var classText = ''
+
+div.checkbox-list
+  .checkbox-list__description
+    .checkbox-list__text #{text}
+    .checkbox-list__arrow
+  .checkbox-list__list
+    each opt in options
+      include ../checkbox-item/checkbox-item

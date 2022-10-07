@@ -1,0 +1,25 @@
+.input {
+  @include widthInput($widthMax);
+}
+
+.input__description {
+  @include description;
+}
+
+.input__name {
+  @include h3-style($dark-100);
+}
+
+.input__text {
+  @include text($dark-50);
+}
+
+.input__default {
+  @include default($dark-25, $widthMax);
+  text-indent: 12px;
+}
+
+//chrome, safari
+.input__default::-webkit-input-placeholder {
+  @include inputPlaceholder($dark-25);
+}

@@ -1,0 +1,42 @@
+.card__header_number {
+  @include h1-style();
+  margin-left: 4px;
+}
+
+.card__header_sing {
+  @include text-style($dark-100);
+  margin-bottom: 2px;
+}
+
+.card__header_type {
+  @include h3-style($purple);
+  margin-bottom: 1px;
+}
+
+.card-room__heading {
+  margin-bottom: 21px;
+}
+
+.card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.card__header_number-room {
+  display: flex;
+  align-items: flex-end;
+}
+
+.card__header_price {
+  display: flex;
+  @include text-style($dark-50);
+  margin-right: 1px;
+  margin-bottom: 1px;
+}
+
+.card__header_desc {
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+}

@@ -1,0 +1,13 @@
+- var heading = 'rate button';
+
+.rate-button
+  .rate-button__heading #{heading}
+  .rate-button__buttons
+    .rate-button__buttons_col1
+      - var nameInput = 'rate-stars'
+      - var items = [{'id':'value_5', 'value':5}, {'id':'value_4', 'value':4, 'checked':true}, {'id':'value_3', 'value':3}, {'id':'value_2', 'value':2}, {'id':'value_1', 'value':1}]
+      include ../_rate-stars/_rate-stars
+    .rate-button__buttons_col2
+      - var nameInput = 'rate-stars2'
+      - var items = [{'id':'value_05', 'value':5, 'checked':true}, {'id':'value_04', 'value':4}, {'id':'value_03', 'value':3}, {'id':'value_02', 'value':2}, {'id':'value_01', 'value':1}]
+      include ../_rate-stars/_rate-stars

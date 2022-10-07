@@ -1,0 +1,35 @@
+.dropdown {
+  @include widthInput($widthMax);
+}
+
+.dropdown__description {
+  @include description;
+}
+
+.dropdown__name {
+  @include h3-style($dark-100);
+}
+
+.select__default {
+  @include default($dark-25, $widthMax);
+  font-size: 14px;
+  line-height: 24px;
+  color: $dark-75;
+  background-image: url("arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 15px top 18px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  text-indent: 14px;
+}
+
+//chrome, safari
+.select__default::-webkit-input-placeholder {
+  @include inputPlaceholder($dark-25);
+}
+
+.dropdown__text {
+  @include text($dark-50);
+  line-height: 15px;
+}

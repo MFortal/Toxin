@@ -1,0 +1,7 @@
+extends ../page.pug
+block content
+  - var text = 'Лучшие номера для вашей работы, отдыха и просто вдохновения'
+  .landing
+    .landing__card 
+      include ../../Ui-kit/cards/card-search/card-search.pug
+    p.landing__text #{text}

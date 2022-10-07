@@ -1,0 +1,30 @@
+include ../../mixin/mixin.pug
+- var heading = 'Войти'
+
+.card.card-login
+  p.card__heading.card-login__heading #{heading}
+  .card-login__name
+    - var placeholderText = 'Email'
+    - var inputType = 'text'
+    - var classInput = ''
+    +input(inputType, placeholderText, classInput)
+
+  .card-login__last-name 
+    - var placeholderText = 'Пароль'
+    - var inputType = 'text'
+    - var classInput = ''
+    +input(inputType, placeholderText, classInput)
+  
+  .card-login__button-login
+    - var opt = 'войти'
+    - var classButton = 'buttons__button'
+    - var classTextButtonArrow = 'card-login__button_text'
+    include ../../form-elements/_button_arrow/_button_arrow.pug
+
+  .card-login__footer 
+    .card-login__text
+      p.card-login__text_log-in Нет аккаунта на Toxin?
+    .card-login__button
+      - var opt = 'Создать'    
+      - var classButton = 'buttons__button buttons__button_unfilled'
+      include ../../form-elements/button/button.pug

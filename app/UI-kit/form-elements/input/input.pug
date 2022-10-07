@@ -1,0 +1,6 @@
+include ../../mixin/mixin.pug
+.input
+  .input__description
+    p.input__name #{nameField} 
+    p(class = 'input__text ' + classText) #{defText}
+  +input(inputType, placeholderText, classInput)

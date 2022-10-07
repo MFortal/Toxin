@@ -1,0 +1,33 @@
+- var heading = 'Найдём номера под ваши пожелания'
+
+.card.card-search
+  .card__heading.card-search__heading #{heading}
+
+  .card-search__dates
+    .card-search__dates_arrival
+      - var nameField = 'прибытие'
+      - var optSelect = 'ДД.ММ.ГГГГ'
+      - var options = ['11.11.2020', '20.12.2020', '31.09.1999'] 
+      - var classDropdown = 'dropdownDate';
+      - var classDivDropdown = 'divDropdown-widthMin'
+      - var textField = ''
+      include ../../form-elements/dropdown/dropdown.pug
+    .card-search__dates_departure
+      - var nameField = 'выезд'
+      - var optSelect = 'ДД.ММ.ГГГГ'
+      - var options = ['11.11.2020', '20.12.2020', '31.09.1999'] 
+      include ../../form-elements/dropdown/dropdown.pug
+
+  .card-search__guests
+    - var nameField = 'гости'
+    - var optSelect = 'Сколько гостей'
+    - var options = ['1', '2', '3'] 
+    - var classDropdown = '';
+    - var classDivDropdown = ''
+    include ../../form-elements/dropdown/dropdown.pug
+
+  .card-search__button
+    - var opt = 'подобрать номер'
+    - var classButton = 'buttons__button'
+    - var classTextButtonArrow = 'card-search__text-button'
+    include ../../form-elements/_button_arrow/_button_arrow.pug

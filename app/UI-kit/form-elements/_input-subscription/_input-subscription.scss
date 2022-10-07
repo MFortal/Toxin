@@ -1,0 +1,6 @@
+.input__subscription {
+  @include widthInput($widthAve);
+  background-image: url("arrow_forward.svg");
+  background-repeat: no-repeat;
+  background-position: right 11px center;
+}

@@ -1,0 +1,28 @@
+.rate-stars {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.rate-stars__input {
+  display: none;
+}
+
+.rate-stars__label {
+  background-image: url("star_border.svg");
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-color: transparent;
+  display: block;
+  cursor: pointer;
+}
+
+.rate-stars__input:checked ~ .rate-stars__label {
+  background-image: url("star.svg");
+}
+
+.rate-stars__label:hover,
+.rate-stars__label:hover ~ .rate-stars__label {
+  background-image: url("star.svg");
+}

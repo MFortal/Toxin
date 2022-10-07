@@ -1,0 +1,22 @@
+extends ../page.pug
+block content
+  .search-room
+    .search-room__filter
+      .filter__date
+        .filter__date_calendar
+          - var nameField = 'даты пребывания в отеле'
+          - var optSelect = '19 авг - 23 авг'
+          - var options = ['08 авг - 12 авг', '15 авг - 17 авг', '20 авг - 23 авг'] 
+
+          include ../../Ui-kit/form-elements/dropdown-filter-date/dropdown-filter-date.pug
+        
+        .filter__date_guests
+          - var nameField = 'гости'
+          - var textSelected = '3 гостя, 1 младенец'
+          - var textField = ''
+          - var options = ['взрослые', 'дети', 'младенцы'] 
+          - var flag = true
+          - var classDivSelected = ''
+
+          include ../../Ui-kit/form-elements/dropdown-guests/dropdown-guests.pug
+    .search-room__cards

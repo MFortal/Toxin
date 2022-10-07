@@ -1,0 +1,13 @@
+.rate-button__heading {
+  @include h3-style($dark-100);
+  @include marginBottomX(18px);
+}
+
+.rate-button__buttons {
+  display: flex;
+}
+
+.rate-button__buttons_col1 {
+  margin-right: 20px;
+  margin-left: 3px;
+}

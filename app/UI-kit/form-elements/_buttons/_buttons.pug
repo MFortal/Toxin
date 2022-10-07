@@ -1,0 +1,42 @@
+.buttons
+  .buttons__heading buttons
+  .buttons__buttons
+
+    .buttons__row
+      - var opt = 'click me'
+      - var classButton = 'buttons__button'
+      .buttons__buttons_1
+        include ../button/button.pug
+
+      - var opt = 'click me'    
+      - var classButton = 'buttons__button buttons__button_opacity-full'
+      .buttons__buttons_2 
+        include ../button/button.pug
+
+    .buttons__row.buttons__row_2
+      - var opt = 'click me'    
+      - var classButton = 'buttons__button buttons__button_unfilled'
+      .buttons__buttons_3 
+        include ../button/button.pug
+
+      - var opt = 'click me'    
+      - var classButton = 'buttons__button buttons__button_unfilled buttons__button_opacity'
+      .buttons__buttons_4 
+        include ../button/button.pug
+    
+    .buttons__row.buttons__row_3
+      - var opt = 'click me'    
+      - var classButton = 'buttons__button buttons__button_text'
+      .buttons__buttons_5 
+        include ../button/button.pug
+
+      - var opt = 'click me'    
+      - var classButton = 'buttons__button buttons__button_textDark'
+      .buttons__buttons_6 
+        include ../button/button.pug
+    
+    .buttons__row
+      - var opt = 'перейти к оплате'
+      - var classButton = 'buttons__button'
+      .buttons__buttons_7 
+        include ../_button_arrow/_button_arrow.pug

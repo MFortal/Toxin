@@ -1,0 +1,15 @@
+extends ../dropdown-menu/dropdown-menu.pug
+
+block variables
+ - var nameField = 'dropdown'
+ - var textSelected = 'Cколько гостей'
+ - var textField = ''
+ - var options = ['взрослые', 'дети', 'младенцы'] 
+ - var classDivDropdown = 'dropdown-guests-apply'
+ - var classDivSelected = 'dropdown-guests-apply__selected'
+ - var classDivSelectedText ='dropdown-guests-apply__selected_text'
+
+block content
+ .dropdown-guests-apply__buttons
+  button(type='submit' class='dropdown-guests-apply__buttons_apply') Применить
+  

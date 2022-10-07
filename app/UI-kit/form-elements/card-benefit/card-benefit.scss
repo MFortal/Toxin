@@ -1,0 +1,27 @@
+.card-benefit {
+  height: 88px;
+  width: 280px;
+  box-sizing: border-box;
+  border-bottom: 1px solid $dark-10;
+  padding-bottom: 17px;
+  padding-top: 19px;
+  display: flex;
+}
+
+.card-benefit__img {
+  width: 48px;
+  height: 48px;
+  margin-right: 10px;
+  background: no-repeat center;
+}
+
+.card-benefit__text_heading {
+  @include body-style-text();
+  font-family: "Montserrat-Bold", sans-serif;
+}
+
+.card-benefit__text_description {
+  font-size: 14px;
+  line-height: 24px;
+  color: $dark-75;
+}

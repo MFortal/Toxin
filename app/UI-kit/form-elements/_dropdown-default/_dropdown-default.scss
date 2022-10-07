@@ -1,0 +1,13 @@
+.divDropdown-widthAve {
+  @include widthInput($widthAve);
+}
+.dropdown-default {
+  @include default($dark-25, $widthAve);
+  padding-left: 13px;
+  padding-bottom: 2px;
+  text-indent: 0px;
+}
+
+.dropdown-default::-webkit-input-placeholder {
+  @include inputPlaceholder($dark-75);
+}

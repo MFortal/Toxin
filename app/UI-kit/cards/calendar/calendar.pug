@@ -1,0 +1,35 @@
+- var days = ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс']
+- var last_dates = ['29', '30', '31']
+- var next_dates = ['1']
+
+.calendar
+  .calendar__header 
+    .calendar__header_arrow-left
+    .calendar__header_month Август 2019
+    .calendar__header_arrow-right
+
+  .calendar__body 
+    .calendar__days
+      each day in days 
+       .calendar__day #{day}    
+    .calendar__dates
+      each date in last_dates
+        .calendar__dates_item.calendar__dates_diff #{date}
+      - for (var x = 1; x <= 7; x++)
+        .calendar__dates_item #{x}
+      .calendar__dates_item.calendar__dates_today 8
+      - for (var x = 9; x <= 18; x++)
+        .calendar__dates_item #{x}
+      .calendar__dates_item.calendar__dates_range 19
+      - for (var x = 20; x <= 22; x++)
+        .calendar__dates_item #{x}
+      .calendar__dates_item.calendar__dates_range 23
+      - for (var x = 24; x <= 31; x++)
+        .calendar__dates_item #{x}
+      each date in next_dates
+        .calendar__dates_item.calendar__dates_diff #{date}
+  
+  .calendar__footer
+    button(type='submit' class='calendar__footer_button calendar__button_reset') Очистить
+    button(type='submit' class='calendar__footer_button calendar__footer_apply') Применить
+

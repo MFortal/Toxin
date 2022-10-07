@@ -1,0 +1,13 @@
+div(class='dropdown ' + classDivDropdown)
+  .dropdown__description
+    p.dropdown__name #{nameField}
+    p.dropdown__text #{textField}
+  select(
+    size = size
+    class = 'select__default ' + classDropdown)
+      option(value=optSelect
+              class="select__option"
+              selected) #{optSelect} 
+      each opt in options
+        option(value=opt
+              class="select__option") #{opt} 

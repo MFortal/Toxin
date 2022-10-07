@@ -1,0 +1,9 @@
+- var heading = 'Checkbox Buttons';
+- var options = [{'text':'Можно курить'}, {'text':'Можно с питомцами'}, {'text':'Можно пригласить гостей (до 10 человек)'}]
+- var classButton = 'checkbox-item__itemCheck'
+- var classText = ''
+
+.checkbox-buttons
+  .checkbox-buttons__heading #{heading}
+  each opt in options
+    include ../checkbox-item/checkbox-item.pug

@@ -1,0 +1,76 @@
+.header-footer {
+  width: 1440px;
+  background: white;
+  box-sizing: border-box;
+  box-shadow: 0px 10px 20px $dark-5;
+}
+
+.header-start {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 140px;
+  height: 70px;
+  align-items: center;
+}
+
+.header-start__menu {
+  display: flex;
+}
+
+.header-start__link_arrow {
+  @include arrow($dark-50);
+  margin-top: 2px;
+  margin-left: -8px;
+  margin-right: -10px;
+}
+
+.header-start__link {
+  display: flex;
+  cursor: pointer;
+  margin-right: 20px;
+  align-items: center;
+}
+
+.header-start__links {
+  display: flex;
+  align-items: center;
+}
+
+.header-start__link_a {
+  font-size: 14px;
+  line-height: 17px;
+  color: $dark-50;
+  text-decoration: none;
+}
+
+.header-start__link_main {
+  font-family: "Montserrat-Bold", sans-serif;
+  color: $dark-75;
+}
+
+.header-start__buttons,
+.header-start__nick {
+  display: flex;
+  align-items: center;
+}
+
+.header-start__nick {
+  padding-left: 20px;
+  height: 30px;
+  border-left: 1px solid $dark-10;
+}
+
+.header-start__button {
+  width: auto;
+  height: auto;
+  padding: 9px 20px 10px 20px;
+  margin: 0;
+}
+
+.header-start__buttons_comein {
+  margin-right: 20px;
+}
+
+.header-start__button_comein {
+  padding: 8px 18px 7px 18px;
+}

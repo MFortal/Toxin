@@ -1,0 +1,136 @@
+.dropdown-menu {
+  @include widthInput($widthAve);
+  height: 75px;
+}
+
+.dropdown-menu__select {
+  overflow: hidden;
+  background-color: white;
+}
+
+.dropdown-menu__description {
+  @include description;
+}
+
+.dropdown-menu__name {
+  @include h3-style($dark-100);
+}
+
+.dropdown-menu__selectedItem {
+  box-sizing: border-box;
+  font-size: 14px;
+  line-height: 24px;
+  color: $dark-75;
+  text-indent: 14px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dropdown-menu__text {
+  @include text($dark-50);
+  line-height: 15px;
+}
+
+.dropdown-menu__selectedItem_text {
+  width: 177px;
+  margin-top: 8px;
+  vertical-align: middle;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.dropdown-menu__buttonMinus,
+.dropdown-menu__buttonPlus {
+  width: 30px;
+  height: 30px;
+  border: 1px solid $dark-25;
+  box-sizing: border-box;
+  border-radius: 22px;
+  font-size: 18px;
+  line-height: 22px;
+  color: $dark-50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.dropdown-menu__listItemText,
+.dropdown-menu__count {
+  @include h3-style($dark-100);
+  margin-bottom: 5px;
+}
+
+.dropdown-menu__count {
+  width: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.dropdown-menu__listItemText {
+  margin-left: 15px;
+}
+
+.dropdown-menu__selectedItem_arrow {
+  @include arrow($dark-75);
+}
+
+.dropdown-menu__counter {
+  margin-right: 7px;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-menu__listItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 7px 0px 7px -1px;
+}
+
+.dropdown-menu__select {
+  border: 1px solid $dark-50;
+  border-radius: 4px;
+  position: relative;
+}
+
+.dropdown-menu__list {
+  border-top: 1px solid $dark-50;
+  display: none;
+  z-index: 1;
+  overflow: auto;
+}
+
+.dropdown-menu__list:last-child {
+  margin-bottom: 9px;
+}
+
+.dropdown-menu__selectedItem {
+  cursor: pointer;
+}
+
+.show {
+  display: contents;
+}
+
+.opacity_minus {
+  opacity: 0.38;
+}
+
+.dropdown-menu__selectedItem_open {
+  border-bottom: 1px solid $dark-50;
+}
+
+.dropdown-menu__widthAve {
+  width: 266px;
+  border: 1px solid $dark-25;
+}
+
+.dropdown-menu__select_widthAve {
+  width: 266px;
+  border: 1px solid $dark-25;
+}

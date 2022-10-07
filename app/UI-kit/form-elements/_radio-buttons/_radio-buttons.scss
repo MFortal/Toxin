@@ -1,0 +1,8 @@
+.radio-buttons__heading {
+  @include h3-style($dark-100);
+  @include marginBottomX(16px);
+}
+
+.radio-buttons__buttons {
+  display: flex;
+}

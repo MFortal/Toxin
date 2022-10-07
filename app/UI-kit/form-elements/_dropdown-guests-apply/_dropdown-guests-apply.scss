@@ -1,0 +1,26 @@
+.dropdown-guests-apply {
+  @include widthInput($widthMax);
+}
+
+.dropdown-guests-apply__selected {
+  width: $widthMax;
+}
+
+.dropdown-guests-apply__selected_text {
+  display: flex;
+}
+
+.dropdown-guests-apply__buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  height: 40px;
+}
+
+.dropdown-guests-apply__buttons_apply {
+  @include h3-style($purple);
+  margin: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}

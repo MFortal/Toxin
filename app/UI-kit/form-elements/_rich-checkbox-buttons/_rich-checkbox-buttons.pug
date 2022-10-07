@@ -1,0 +1,15 @@
+- var heading = 'rich checkbox Buttons';
+- var options = ['Широкий коридор', 'Помощник для инвалидов']
+- var options = [{'heading': 'Широкий коридор', 'text': 'Ширина коридоров в номере не менее 91 см.', flag: false},{'heading': 'Помощник для инвалидов', 'text': 'На 1 этаже вас встретит специалист  и проводит до номера.', flag: true}]
+- var classButton = 'checkbox-item__itemCheck'
+- var classText = 'checkbox-item__text-rich'
+- var classDivCheckbox = ''
+
+.checkbox-buttons
+  .checkbox-buttons__heading #{heading}
+  each opt in options
+    if opt.flag
+      - var classText = 'checkbox-item__text-rich checkbox-item__text-flag'
+    else 
+      - var classText = 'checkbox-item__text-rich'
+    include ../checkbox-item/checkbox-item.pug

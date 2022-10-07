@@ -1,0 +1,31 @@
+include ../../mixin/mixin.pug
+
+- var bookingText = 'Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»'
+- var options = [{'header': 'навигация', 'items':['О нас','Новости', 'Служба поддержки', 'Услуги'], 'classOpt': 'nav__item_nav'}, {'header': 'о нас', 'items':['О сервисе','Наша команда', 'Вакансии', 'Инвесторы'], 'classOpt': 'nav__item_info'}, {'header': 'служба поддержки', 'items':['Соглашения','Сообщества', 'Связь с нами'], 'classOpt': 'nav__item_support'}]
+- var subscriptionHeader = 'подписка'
+- var subscriptionText = 'Получайте специальные предложения и новости сервиса'
+- var placeholderText = 'Email'
+- var classInput = 'input__subscription footer__input'
+- var inputType = 'email'
+- var classLinks = 'footer__links_block'
+- var classTwitter = 'footer__links_twitter'
+
+.footer.header-footer
+  .footer__menu 
+    .footer__menu_booking 
+      .booking__icon
+        include ../icon/icon.pug
+      .booking__text #{bookingText}
+    .footer__menu_nav
+       each opt in options
+        div(class=opt.classOpt) 
+          .nav__header #{opt.header}
+          each item in opt.items
+            .nav__item #{item}
+    .footer__menu_subscription
+      .subscription__header #{subscriptionHeader}
+      .subscription__text #{subscriptionText}
+      .subscription__input
+        +input(inputType, placeholderText, classInput)
+  .footer__links
+    include ../links/links.pug

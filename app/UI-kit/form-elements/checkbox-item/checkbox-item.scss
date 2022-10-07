@@ -1,0 +1,52 @@
+.checkbox-item {
+  background-color: $white;
+}
+
+.checkbox-item__label {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  font-size: 14px;
+  line-height: 18px;
+  color: $dark-50;
+}
+
+.checkbox-item__text {
+  margin: 0;
+  width: 192px;
+}
+
+.checkbox-item__mark {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid $dark-25;
+  background-color: $white;
+}
+
+.checkbox-item__mark_checked {
+  background: url("check-mark.svg") no-repeat;
+  background-position: center;
+  border: 1px solid $purple;
+}
+
+.checkbox-item__itemCheck {
+  display: none;
+}
+
+.list_show {
+  display: contents;
+}
+
+.arrow_rotate {
+  transform: rotate(180deg);
+  background-position: right 16px bottom 17px;
+}
+
+.checkbox-item__heading {
+  @include text-style($dark-75);
+  margin: 0px 0px 5px 1px;
+}

@@ -1,0 +1,23 @@
+.header-start.header-footer
+  .header-start__icon
+    include ../icon/icon.pug
+  .header-start__menu
+    nav.header-start__links
+      each link in links 
+        .header-start__link
+          a(class='header-start__link_a '+ link.classA href='#') #{link.name}
+          if link.arrow
+            .header-start__link_arrow
+      if authorized
+        .header-start__buttons
+          .header-start__buttons_comein
+            - var opt = 'войти'
+            - var classButton = 'header-start__button header-start__button_comein buttons__button buttons__button_unfilled'
+            include ../../form-elements/button/button.pug
+          .header-start__buttons_login
+            - var opt = 'зарегистрироваться'    
+            - var classButton = 'header-start__button buttons__button'
+            include ../../form-elements/button/button.pug
+      else 
+        .header-start__nick
+          a(class='header-start__link_a ' href='#') #{nick}

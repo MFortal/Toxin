@@ -1,0 +1,66 @@
+include ../../mixin/mixin.pug
+- var heading = 'Регистрация аккаунта'
+
+.card.card-registration
+  p.card__heading.card-registration__heading #{heading}
+  .card-registration__information
+    .card-registration__name
+      - var placeholderText = 'Имя'
+      - var inputType = 'text'
+      - var classInput = ''
+      +input(inputType, placeholderText, classInput)
+
+    .card-registration__last-name 
+      - var placeholderText = 'Фамилия'
+      - var inputType = 'text'
+      - var classInput = ''
+      +input(inputType, placeholderText, classInput)
+    
+    .card-registration__sex
+      - var options = ['Мужчина', 'Женщина']
+      - var name = 'sex';
+      - var classButton = ''
+      include ../../form-elements/_radio-buttons/radio-buttons__buttons.pug
+
+    .card-registration__birth-date
+      - var nameField = 'дата рождения';
+      - var defText = ''
+      - var placeholderText = 'ДД.ММ.ГГГГ'
+      - var classInput = 'input-masked-date'
+      - var inputType = 'text'
+      - var classText = ''
+      include ../../form-elements/input/input.pug
+    
+    .card-registration__login
+      p.card-registration__login_heading данные для входа в сервис
+      .card-registration__login_email
+        - var placeholderText = 'Email'
+        - var inputType = 'text'
+        - var classInput = ''
+        +input(inputType, placeholderText, classInput)
+      .card-registration__login_password
+        - var placeholderText = 'Пароль'
+        - var inputType = 'text'
+        - var classInput = ''
+        +input(inputType, placeholderText, classInput)
+      
+    .card-registration__toggle 
+      - var options = ['Получать спецпредложения']
+      - var classButton = 'toggle-button';
+      - var classDivCheckbox = 'toggle-div';
+      - var classText = 'toggle-text';
+      include ../../form-elements/_toggle/toggle__buttons.pug
+
+    .card-registration__button
+      - var opt = 'перейти к оплате'
+      - var classButton = 'buttons__button'
+      - var classTextButtonArrow = 'card-registration__button_text'
+      include ../../form-elements/_button_arrow/_button_arrow.pug
+
+    .card-registration__footer 
+      .card-registration__text
+        p.card-registration__text_log-in Уже есть аккаунт на Toxin
+      .card-registration__button-log-in
+        - var opt = 'Войти'    
+        - var classButton = 'buttons__button buttons__button_unfilled'
+        include ../../form-elements/button/button.pug

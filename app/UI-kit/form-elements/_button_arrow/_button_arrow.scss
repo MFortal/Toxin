@@ -1,0 +1,14 @@
+.button_arrow {
+  width: 320px;
+  height: 44px;
+  background: $gradient;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.button__img {
+  position: absolute;
+  right: 13px;
+}
